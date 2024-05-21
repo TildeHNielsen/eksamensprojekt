@@ -1,0 +1,109 @@
+
+/*Header*/
+/*styling af logo*/
+.logo {
+    margin-left: 0.7rem;
+    height: 3.2rem;
+}
+/*styling af burger icon*/
+#menu {
+    display: none;
+}
+.burgericon {
+    font-size: 2rem;
+    padding-right: 1rem;
+    position: relative;
+}
+/*Vis og skjul dropdown menuen ved tryk paa burger icon*/
+.burger-menu:checked + .burgericon + .dropdown {
+    display: block;
+}
+/*styling af header*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: black;
+    overflow: hidden;
+    height: 3.2rem;
+}
+.navbar a {
+    float: left;
+}
+
+
+/*Footer*/
+/*styling af ikoner*/
+.ikoner {
+    display: flex;
+    height: 2rem;
+    width: auto;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+/*styling af tekst*/
+.mobil {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 2rem;
+}
+.mobil p {
+    padding-top: 1rem;
+}
+.mobil a {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.desktop {
+    display: none;
+}
+footer {
+    padding-top: 2rem;
+}
+
+
+
+
+
+/*Media queries til desktop paa 600px*/
+@media screen and (min-width: 600px) {
+    .mobil {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding-top: 2rem;
+    }
+    .left {
+        padding-left: 5rem;
+    }
+    .right {
+        padding-right: 5rem;
+    }
+    .right a {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 3rem;
+        color: white;
+    }
+    .left a {
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 3rem;
+        color: white;
+    }
+    .desktop a {
+        color: white;
+    }
+    .info {
+        padding-top: 3rem;
+    }
+}
