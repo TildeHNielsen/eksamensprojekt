@@ -1,0 +1,112 @@
+* {
+    padding: 0.2rem;
+}
+
+/*styling af tekster*/
+h1 {
+    text-align: center;
+    font-family: serif; /*Ændre til rigtig font senere*/
+    background-color: #C4E6BD;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 5px 5px black;
+    font-size: 2.5rem;
+}
+h4 {
+    font-size: 1.875rem;
+    text-align: left;
+}
+strong {
+    font-size: 1.2rem;
+}
+a {
+    text-decoration: underline;
+    color: #0000ee;
+    background-color: transparent;
+}
+
+/*opstilling af produktboks*/
+.klassiske {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.produktboks {
+    border: solid 0.1rem black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.produkter1 {
+    background-color: #F6F6F6;
+    padding: 2rem;
+}
+.produkter2 {
+    padding: 2rem;
+}
+
+/*Blanke bokse til og fra*/
+.hide {
+    display: none;
+}
+/*Sorter knap*/
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -1.5rem;
+    padding-top: 3rem;
+}
+.sorter {
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+/*placering af knap*/
+button {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.can {
+    width: 100%;
+}
+
+
+/*Media quieries ved desktop paa 800px*/
+@media screen and (min-width: 700px) {
+    h1 {
+        text-align: left;
+        padding-left: 2rem;
+    }
+    .produktboks {
+        flex-direction: row;
+        display: flex;
+        flex-direction: row;
+        max-width: 80rem;
+        align-self: center;
+    }
+    .hide {
+        display: flex;
+    }
+    .blank {
+        width: 100%;
+        filter: brightness(0%);
+        padding-bottom: 2.5rem;
+    }
+    button {
+        float: right;
+        top: 0;
+        left: 0;
+        -ms-transform: 0;
+    transform: 0;
+    margin-top: 3rem;
+    }
+    .none {
+        display: none;
+    }
+}

@@ -1,0 +1,84 @@
+/*Styling af de forskellige tekster*/
+h1 {
+    text-align: center;
+    font-family: serif; /*Ændre til rigtig font senere*/
+    background-color: #C4E6BD;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 5px 5px black;
+    font-size: 1.875rem;
+}
+h4 {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    margin-bottom: -0.1rem;
+}
+.tekst p {
+    font-size: 1,06rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: -1rem;
+}
+/*gøre stregen under ordet kortere*/
+hr {
+    margin-top: 0.1rem;
+    height: 0.1rem;
+    background-color: #d9d9d9;
+    border: none;
+    width: 3rem;
+}
+
+/*opstilling af billede i boks*/
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*Boksen*/
+.boks {
+    background-color: #F8EE94;
+    border-radius: 0.3rem;
+    padding-bottom: 3rem;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: inset 0px 0px 10px black;
+    margin-bottom: 7rem;
+    margin-top: 5rem;
+}
+li {
+    padding-bottom: 3rem;
+    padding-right: 1.5rem;
+}
+.overskrift {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.flex {
+    display: block;
+}
+
+
+/*Media quieries ved desktop paa 800px*/
+@media screen and (min-width: 800px) {
+.flex {
+    display: flex;
+}
+.boks {
+    width: 25rem;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+}
+h1 {
+    text-align: left;
+    padding-left: 2rem;
+}
+.tekst {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+}

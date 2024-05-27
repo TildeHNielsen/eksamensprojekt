@@ -1,0 +1,93 @@
+* {
+    padding: 0.2rem;
+}
+/*Faa p til at ligne et link*/
+.link {
+    text-decoration: underline;
+}
+/*styling af tekst*/
+h1 {
+    text-align: center;
+    font-family: serif; /*Ændre til rigtig font senere*/
+    background-color: #C4E6BD;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 5px 5px black;
+    font-size: 2.5rem;
+}
+/*styling anmeldelses boks*/
+.anmeld {
+    border: solid 0.1rem black;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 0.1rem;
+    margin-bottom: 3rem;
+}
+.righte {
+    text-align: right;
+}
+/*styling af stjerner*/
+.stars {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #F1DD29;
+    border: solid 0.1rem black;
+    padding-bottom: 0.5rem;
+    width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.starsin {
+    color: #F1DD29;
+    font-size: 2rem;
+    margin-bottom: -0.7rem;
+    margin-top: -0.1rem;
+}
+/*styling af sorter knapper*/
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.part1 {
+    display: block;
+}
+/*daaser*/
+img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/*Media queries*/
+@media screen and (min-width: 700px) {
+    .anmeld {
+        display: flex;
+        flex-direction: column;
+    }
+    .part1 {
+        display: flex;
+    }
+    .tekst {
+        padding-top: 2.5rem;
+        text-align: left;
+    }
+    .righte {
+        margin-right: -1rem;
+    }
+    .starsin {
+        border: solid 0.1rem black;
+        padding-bottom: 0.5rem;
+        width: 12rem;
+        margin-bottom: 1rem;
+        margin-top: -3rem;
+    }
+    .stars {
+        margin-left: 100;
+        margin-right: 0;
+    }
+    h1 {
+        text-align: left;
+        padding-left: 2rem;
+    }
+}

@@ -22,7 +22,7 @@ hr {
     margin-top: -2rem;
     border: none;
 }
-/*Rundede hjørner paa tekstboks og styling af knap*/
+/*Rundede hjørner paa tekstboks*/
 .rcorners {
     border-radius: 1rem;
     background-color: #E9F7EF;
@@ -40,18 +40,7 @@ p {
     font-size: 1.0625rem;
     line-height: 120%;
 }
-button {
-    color: white;
-    background-color: #2658DB;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 0.4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    border: none;
-}
+
 /*scrollmenu til produkterne*/
 .scrollmenu {
     background-color: white;
@@ -81,19 +70,91 @@ button {
 .produkter2 {
     background-color: #F6F6F6;
     padding: 2rem;
+    box-shadow: inset 0px 0px 5px black;
+}
+.information {
+    border: solid 0.1rem black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 /*styling af link*/
 .link {
     display: flex;
     justify-content: flex-end;
     padding-bottom: 0.8rem;
+    text-decoration: underline;
+    color: #0000EE;
+    padding-right: 3rem;
+}
+.link2 {
+    text-decoration: underline;
+    color: #0000EE;
+}
+/*styling af links*/
+.lille a {
+    background-color: transparent;
+    text-decoration: underline;
+    color: #0000EE;
+}
+
+.billede {
+    box-shadow: 0px 0px 10px black;
+    width: 90%;
+}
+
+.border {
+    border: solid 0.2rem black;
+    margin-bottom: 1rem;
+    opacity: 80%;
+}
+.centertekst {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.stars {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #F1DD29;
+    border: solid 0.1rem black;
+    width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0rem;
+}
+.link3 {
+    text-decoration: underline;
+    color: #0000EE;
+    display: flex;
+    justify-content: center;
+    margin-top: -1.5rem;
+    padding-bottom: 6rem;
+}
+a {
+    background-color: transparent;
+}
+.eksempler {
+    display: none;
+}
+.hide {
+    display: none;
 }
 
 
 
 
-/*Media queries til desktop ved 900px*/
-@media screen and (min-width: 900px) {
+
+/*Media queries til desktop ved 800px*/
+@media screen and (min-width: 800px) {
 
     /*Vis det andet billede*/
     .heroimagemobil {
@@ -125,8 +186,8 @@ button {
     /*Ændring af teksboks*/
     .rcorners {
         display: flex;
-        gap: 8rem;
-        padding-left: 5rem;
+        gap: 5rem;
+        padding-left: 3rem;
         margin-left: 4rem;
         margin-right: 4rem;
         margin-top: -1rem;
@@ -136,5 +197,49 @@ button {
     }
     h5 {
         font-size: 1.875rem;
+    }
+    .information {
+        flex-direction: row;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: -1.1rem;
+    }
+    .flexing {
+        display: flex;
+        gap: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: -1.1rem;
+    }
+    .eksempler {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        text-align: center;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        padding-bottom: 3rem;
+    }
+    .link3 {
+        display: none;
+    }
+    .stars {
+        background-color: black;
+        margin-bottom: 10rem;
+    }
+    .hide {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 0.8rem;
+        text-decoration: underline;
+        color: #0000EE;
+        padding-right: 3rem;
+    }
+    .scrollmenu {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .link2 {
+        margin-left: 2rem;
     }
 }
