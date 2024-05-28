@@ -15,24 +15,238 @@
 <!--Link til favicon-->
     <link rel="icon" type="image/x-icon" href="img/webp/logo.webp">
 
+<!--Link til Google fonts: DM Serif Display, DM Serif Text og Istok Web-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <title>Produkter</title>
 </head>
 <body>
     <header>
-Navigationsbar
-    </header>
+        <!--Navigationsbar til mobil-->
+                <nav class="navbar">
+                    <a class="logo" href="index.html"> <!--Logo er link til forsiden-->
+        
+        <!--Picture tag med webp og fallback til png-->
+                        <picture>
+                            <source type="image/webp" src="img/webp/logo.webp">
+                            <source type="image/png" src="img/png/logo.png">
+        
+                            <img class="logo" src="img/png/logo.png" alt="logo">
+                        </picture>
+                    </a>
+        
+        <!--UTF-8 symbol med hex kode til burger menu ikon-->
+                    <nav class="burger">&#9776;
+                        <nav class="dropdown">
+                            <nav class="content">
+        <!--Første lag dropdown-->
+                            <a href="#">Produkter</a>
+                            <nav class="dropdropdown">
+                                <nav class="dropcontent">
+        <!--Andet lag dropdown med UTF-8 pil ikon-->
+                                <a href="#">Alle produkter <span class="flyt">&#9655</span></a>
+                                <nav class="dropdropdropdown">
+        <!--Tredje lag dropdown-->
+                                    <a href="produkter.html">De klassiske øl</a>
+                                    <a href="produkter.html">Nyeste produkter</a>
+                                    <a href="produkter.html">Specialøl</a>
+                                    <a href="produkter.html">Anderledes smage</a>
+                                </nav>
+        <!--Fortsættelse på andet lag-->
+                                <a href="#">Ingredienser</a>
+                            </nav>
+                            </nav>
+                        </nav>
+        
+        <!--Fortsættelse på første lag-->
+                            <nav class="content">
+                            <a href="#">Information</a>
+                            <nav class="dropdropdown">
+                                <nav class="dropcontent">
+        <!--Resten af navigationsbaren fortsætter som forklaret ovenfor-->
+                                    <a href="#">Det gode valg <span class="far">&#9655</span></a>
+                                    <nav class="dropdropdropdown">
+                                        <a href="sundhed.html">Info om sundhed</a>
+                                        <a href="#">Bæredygtighed</a>
+                                        <a href="#">Sportslivet</a>
+                                    </nav>
+                                </nav>
+                                    <nav class="dropcontent">
+                                    <a href="#">Smagens udvikling <span>&#9655</span></a>
+                                    <nav class="dropdropdropdown">
+                                        <a href="#">Øl vs. sodavand</a>
+                                        <a href="#">Gæt smagen</a>
+                                    </nav>
+                                </nav>
+                                <nav class="dropcontent">
+                                <a href="#">Sådan støtter du andre</a>
+                            </nav>
+                            </nav>
+                        </nav>
+        
+                        <nav class="content">
+                            <a href="#">Køb</a>
+                            <nav class="dropdropdown">
+                                <nav class="dropcontent">
+                                    <a href="#">Køb her</a>
+                                    <a href="#">Hvor sælger vi?</a>
+                                    <a href="#">Prissammenligning</a>
+                                </nav>
+                            </nav>
+                        </nav>
+        
+                        <nav class="content">
+                            <a href="#">Events</a>
+                            <nav class="dropdropdown">
+                                <nav class="dropcontent">
+                                    <a href="#">Alkoholfri ølsmagning</a>
+                                    <a href="#">Alkoholfri Workshop</a>
+                                </nav>
+                            </nav>
+                        </nav>
+        
+                        <nav class="content">
+                            <a href="#">Om ZeroBuzz Brew</a>
+                            <nav class="dropdropdown">
+                                <nav class="dropcontent">
+                                <a href="#">Om os <span class="further">&#9655</span></a>
+                                <nav class="dropdropdropdown">
+                                    <a href="#">Vores historie</a>
+                                    <a href="vaerdier.html">Vores værdier</a>
+                                    <a href="#">Sådan hjælper vi dig</a>
+                                </nav>
+                                <a href="anmeldelser.html">Anmeldelser</a>
+                                <a href="#">Følg os</a>
+                            </nav>
+                            </nav>
+                        </nav>
+        
+                        <nav class="content">
+                            <a href="#">Kontakt</a>
+                            <nav class="dropdropdown">
+                                <nav class="dropcontent">
+                                    <a href="#">Kontakt</a>
+                                    <a href="#">FAQ</a>
+                                    <a href="#">Støt os</a>
+                                </nav>
+                            </nav>
+                        </nav>
+                        </nav>
+                    </nav>
+        
+        <!--Navbar til desktop-->
+                    <nav class="deskdrop">
+        <!--Knap til dropdown-->
+                        <button class="dropbtn">Produkter</button>
+                        <nav class="deskdrop-content">
+                            <nav class="deskdropdrop">
+        <!--Dropdown med UTF-8 pil ikon til andet lag dropdown-->
+                                <button class="dropdropbtn">Alle produkter <span>&#9655</span></button>
+        <!--Andet lag dropdown-->
+                                <nav class="deskdropdrop-content">
+                                    <a href="produkter.html">De klassiske øl</a>
+                                    <a href="produkter.html">Nyeste produkter</a>
+                                    <a href="produkter.html">Specialøl</a>
+                                    <a href="produkter.html">Anderledes smage</a>
+                                </nav>
+                            </nav>
+        <!--Fortsættelse på første lag dropdown-->
+                            <a href="#">Ingredienser</a>
+                        </nav>
+                    </nav>
+        <!--Linje mellem menupunkterne-->
+        <p class="line">|</p>
+        
+        <!--Nyt menupunkt, fortsætter som beskrevet ovenfor-->
+                        <nav class="deskdrop">
+                        <button class="dropbtn">Information</button>
+                        <nav class="deskdrop-content">
+                            <nav class="deskdropdrop">
+                                <button class="dropdropbtn">Det gode valg <span class="far">&#9655</span></button>
+                                <nav class="deskdropdrop-content">
+                                    <a href="sundhed.html">Info om sundhed</a>
+                                    <a href="#">Bæredygtighed</a>
+                                    <a href="#">Sportslivet</a>
+                                </nav>
+                            </nav>
+                            <nav class="deskdropdrop">
+                                <button class="dropdropbtn">Smagens udvikling <span>&#9655</span></button>
+                                <nav class="deskdropdrop-content">
+                                    <a href="#">Øl vs. sodavand</a>
+                                    <a href="#">Gæt smagen</a>
+                                </nav>
+                            </nav>
+                            <a href="#">Sådan støtter du andre</a>
+                        </nav>
+                    </nav>
+        <p class="line">|</p>
+        
+                    <nav class="deskdrop">
+                        <button class="dropbtn">Køb</button>
+                        <nav class="deskdrop-content">
+                            <a href="#">Køb her</a>
+                            <a href="#">Hvor sælger vi?</a>
+                            <a href="#">Prissammenligning</a>
+                        </nav>
+                    </nav>
+        
+        <p class="line">|</p>
+                    <nav class="deskdrop">
+                        <button class="dropbtn">Events</button>
+                        <nav class="deskdrop-content">
+                            <a href="#">Alkoholfri ølsmagning</a>
+                            <a href="#">Alkoholfri Workshop</a>
+                        </nav>
+                    </nav>
+        
+        <p class="line">|</p>
+                    <nav class="deskdrop">
+                        <button class="dropbtn">Om ZeroBuzz Brew</button>
+                        <nav class="deskdrop-content">
+                            <nav class="deskdropdrop">
+                                <button class="dropdropbtn">Om os <span class="further">&#9655</span></button>
+                                <nav class="deskdropdrop-content">
+                                    <a href="#">Vores historie</a>
+                                    <a href="vaerdier.html">Vores værdier</a>
+                                    <a href="#">Sådan hjælper vi dig</a>
+                                </nav>
+                            </nav>
+                            <a href="anmeldelser.html">Anmeldelser</a>
+                            <a href="#">Følg os</a>
+                        </nav>
+                    </nav>
+                    
+        <p class="line">|</p>
+                    <nav class="deskdrop">
+                        <button class="dropbtn">Kontakt</button>
+                        <nav class="deskdrop-content">
+                            <a href="#">Kontakt</a>
+                            <a href="#">FAQ</a>
+                            <a href="#">Støt os</a>
+                        </nav>
+                    </nav>
+                    </nav>
+                </nav>
+        </header>
+
+
     <main>
+<!--Overskift-->
         <h1>Alle produkter</h1>
-    
+<!--En sektion af produkter med tilhørende-->
         <section class="klassiske">
-            <section class="flex">
+            <section class="flex"> <!--Underoverskrift og sorter knap skal være i flex-->
             <section>
-            <h4>De klassiske øl</h4>
+            <h4>De klassiske øl</h4> <!--Underoverskift-->
             </section>
 
+<!--Sorter knap laves visuelt, men jeg har ikke programmeret den til at fungere-->
             <section class="sorter">
-                <form action="##">
+                <form action="#"> <!--Knappen har ikke en programmeret funktion endnu-->
                     Sorter efter: <br>
+<!--Sorterings muligheder-->
                     <select name="sorter" id="sorter">
                         <option value="nyeste">Mest solgt</option>
                         <option value="1-5">A-Z</option>
@@ -42,19 +256,20 @@ Navigationsbar
             </section>
         </section>
 
+<!--Kasse med produkt billeder og infor-->
             <article class="produktboks">
-                <section class="produkter1">
+                <section class="produkter1"> <!--Skal have grå baggrund-->
                 <img class="can" src="img/png/can2.png" alt="can">
-                <p class="stor"><strong>Den klassiske 0,0%</strong></p>
-                <p class="lille">Øltype: Klassisk øl <br> Kcal: 21 <br> ABV: 0% <br> <a href="##">Læs mere</a></p>
+                <p class="stor"><strong>Den klassiske 0,0%</strong></p> <!--Tyk skrift-->
+                <p class="lille">Øltype: Klassisk øl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="#">Læs mere</a></p>
                 </section>
 
-                <section class="produkter2">
+                <section class="produkter2"> <!--Skal have hvid baggrund-->
                     <img class="can" src="img/png/can1.png" alt="can">
                     <p class="stor"><strong>Classic 0,0%</strong></p>
-                    <p class="lille">Øltype: Classic øl <br> Kcal: 21 <br> ABV: 0% <br> <a href="##">Læs mere</a></p>
+                    <p class="lille">Øltype: Classic øl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
                     </section>
-<section class="hide">
+<section class="hide"> <!--Tomme kasser skal kunne skjules på mobil-->
                     <section class="produkter1">
                         <img class="blank" src="img/png/can1.png" alt="blank">
                         <p>Flere produkter på vej...</p>
@@ -66,8 +281,9 @@ Navigationsbar
                     </section>
                 </section>
         </section>
-        <p class="none"> Flere produkter på vej...</p>
+        <p class="none"> Flere produkter på vej...</p> <!--Den tekst skal kunne skjules på desktop-->
 
+<!--Tre kasser mere nedad, alle lavet på samme måde-->
         <section class="klassiske">
             <section class="flex">
                 <section>
@@ -75,8 +291,8 @@ Navigationsbar
                 </section>
     
                 <section class="sorter">
-                    <form action="##">
-                        Sorter efter: <br>
+                    <form action="#">
+                        Sorter efter:<br>
                         <select name="sorter" id="sorter">
                             <option value="nyeste">Mest solgt</option>
                             <option value="1-5">A-Z</option>
@@ -89,25 +305,25 @@ Navigationsbar
                 <section class="produkter1">
                 <img class="can" src="img/png/can4.png" alt="can">
                 <p class="stor"><strong>Saison 0,0%</strong></p>
-                <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a href="##">Læs mere</a></p>
+                <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
                 </section>
 
                 <section class="produkter2">
                     <img class="can" src="img/png/can6.png" alt="can">
                     <p class="stor"><strong>Blåbær og brombær 0,0%</strong></p>
-                    <p class="lille">Øltype: Bær smag <br> Kcal: 21 <br> ABV: 0% <br> <a href="##">Læs mere</a></p>
+                    <p class="lille">Øltype: Bær smag <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
                     </section>
 
                     <section class="produkter1">
                         <img class="can" src="img/png/can3.png" alt="can">
                         <p class="stor"><strong>Sour 0,0%</strong></p>
-                        <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a href="##">Læs mere</a></p>
+                        <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
                         </section>
 
                         <section class="produkter2">
                             <img class="can" src="img/png/can5.png" alt="can">
                             <p class="stor"><strong>Lime og cherimoya 0,0%</strong></p>
-                            <p class="lille">Øltype: Med smag <br> Kcal: 21 <br> ABV: 0% <br> <a href="##">Læs mere</a></p>
+                            <p class="lille">Øltype: Med smag <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
                             </section>
                         </section>
 
@@ -118,7 +334,7 @@ Navigationsbar
                                     </section>
                         
                                     <section class="sorter">
-                                        <form action="##">
+                                        <form action="#">
                                             Sorter efter: <br>
                                             <select name="sorter" id="sorter">
                                                 <option value="nyeste">Mest solgt</option>
@@ -132,13 +348,13 @@ Navigationsbar
                                     <section class="produkter1">
                                     <img class="can" src="img/png/can3.png" alt="can">
                                     <p class="stor"><strong>Sour 0,0%</strong></p>
-                                    <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a href="##">Læs mere</a></p>
+                                    <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
                                     </section>
                     
                                     <section class="produkter2">
                                         <img class="can" src="img/png/can4.png" alt="can">
                                         <p class="stor"><strong>Saison 0,0%</strong></p>
-                                        <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a href="##">Læs mere</a></p>
+                                        <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
                                         </section>
                                         <section class="hide">
                                             <section class="produkter1">
@@ -175,13 +391,13 @@ Navigationsbar
                                     <section class="produkter1">
                                     <img class="can" src="img/png/can6.png" alt="can">
                                     <p class="stor"><strong>Blåbær og brombær 0,0%</strong></p>
-                                    <p class="lille">Øltype: Bær smag <br> Kcal: 21 <br> ABV: 0% <br> <a href="##">Læs mere</a></p>
+                                    <p class="lille">Øltype: Bær smag <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
                                     </section>
                     
                                     <section class="produkter2">
                                         <img class="can" src="img/png/can1.png" alt="can">
                                         <p class="stor"><strong>Lime og cherimoya 0,0%</strong></p>
-                                        <p class="lille">Øltype: Med smag <br> Kcal: 21 <br> ABV: 0% <br> <a href="##">Læs mere</a></p>
+                                        <p class="lille">Øltype: Med smag <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
                                         </section>
                                         <section class="hide">
                                             <section class="produkter1">
@@ -198,28 +414,37 @@ Navigationsbar
                             <p class="none"> Flere produkter på vej...</p>
         </section>
 
+<!--Information under kasserne-->
         <section class="bottompage">
-            <button>Køb her</button>
-            <p>Læs om vores ingredienser <a href="##">her.</a></p>
-            <p>Se hvad vores kunder synes <a href="##">her.</a></p>
+            <button class="knap">Køb her</button> <!--Knap til køb-->
+<!--Link sætninger-->
+            <p class="links">Læs om vores ingredienser <a class="link" href="#">her.</a></p>
+            <p class="links">Se hvad vores kunder synes <a class="link" href="anmeldelser.html">her.</a></p>
         </section>
-
     </main>
+
+    
     <footer>
+        <!--Jeg har lavet to forskellige opsætninger til footeren, da jeg ikke kunne gennemskue hvordan jeg skulle
+        ændre opsætningen på min ønskede måde blot med CSS, der er derfor brugt display:none i stedet-->
+        
         <!--Footer opstilling til mobil--> 
                 <section class="mobil">
+        <!--Overskrift-->
                 <p><b>ZeroBuzzBrew</b></p>
+        <!--De tre ikoner som skal være links, men da sidere ikke eksisterer sker der ikke noget ved klik-->
                 <figure class="ikoner">
-                    <a href="##" class="ikoner">
-                        <img src="img/facebook.svg" alt="facebook">
+                    <a href="#" class="ikoner">
+                        <img src="img/png/facebook.png" alt="facebook">
                     </a>
-                    <a href="##" class="ikoner">
-                        <img src="img/instagram.webp" alt="instagram">
+                    <a href="#" class="ikoner">
+                        <img src="img/png/instagram.png" alt="instagram">
                     </a>
-                    <a href="##" class="ikoner">
-                        <img src="img/twitter.png" alt="twitter">
+                    <a href="#" class="ikoner">
+                        <img src="img/png/twitter.png" alt="twitter">
                     </a>
                 </figure>
+        <!--Alle shortcuts-->
                 <a href="produkter.html">Se produkter</a>
                 <a href="##">Kontakt</a>
                 <a href="##">FAQ</a>
@@ -231,22 +456,24 @@ Navigationsbar
         
         <!--Footer opstilling til desktop-->
             <section class="desktop">
+        <!--Venstre side i flex-->
                 <section class="left">
                     <a href="##">Kontakt</a>
                     <a href="##">FAQ</a>
                     <a href="##">Støt os</a>
                 </section>
+        <!--Midten af flex-->
                 <section>
                     <p><b>ZeroBuzzBrew</b></p>
                 <figure class="ikoner">
-                    <a href="##" class="ikoner">
-                        <img src="img/facebook.svg" alt="facebook">
+                    <a href="#" class="ikoner">
+                        <img src="img/png/facebook.png" alt="facebook">
                     </a>
-                    <a href="##" class="ikoner">
-                        <img src="img/instagram.webp" alt="instagram">
+                    <a href="#" class="ikoner">
+                        <img src="img/png/instagram.png" alt="instagram">
                     </a>
-                    <a href="##" class="ikoner">
-                        <img src="img/twitter.png" alt="twitter">
+                    <a href="#" class="ikoner">
+                        <img src="img/png/twitter.png" alt="twitter">
                     </a>
                 </figure>
                     <a href="produkter.html">Se produkter</a>
@@ -254,6 +481,7 @@ Navigationsbar
                     <p>+45 56 67 89 56</p>
                     <p>zerobuzzbrew@gmail.com</p>
                 </section>
+        <!--Højre side af flex-->
                 </section>
                 <section class="right">
                     <a href="anmeldelser.html">Anmeldelser</a>

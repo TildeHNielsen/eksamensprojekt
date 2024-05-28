@@ -1,8 +1,3 @@
-/*Standard indstillinger for Anmeldelser*/
-* {
-    padding: 0.2rem;
-}
-
 /*Almindelig styling af forskellige typer tekst*/
 p {
     font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
@@ -22,6 +17,11 @@ h1 {
     padding-bottom: 1rem;
     box-shadow: 0 5px 5px black;
     font-size: 2.5rem; /*Størrelser valgt ved Mockups*/
+    margin-top: 0rem;
+}
+/*Padding under sorter knap*/
+.sorter {
+    padding-bottom: 1rem;
 }
 /*Få <p> til at ligne et understreget link*/
 .link {
@@ -43,7 +43,7 @@ h1 {
     margin-bottom: -0.7rem;
     margin-top: -0.1rem;
 }
-/*Mellemrum mellem sorter knap og 'Skriv en amneldelse' tekst*/
+/*Mellemrum mellem sorter knap og 'Skriv en anmeldelse' tekst*/
 .flex {
     display: flex;
     justify-content: space-between;
@@ -110,7 +110,7 @@ h1 {
     border: solid 0.1rem black;
     width: 12rem;
     margin-bottom: 1rem;
-    margin-top: -3rem;
+    margin-top: -2rem;
     font-size: 2rem; /*Størrelser valgt ved Mockups*/
     padding-left: 2rem;
     padding-right: 2rem;

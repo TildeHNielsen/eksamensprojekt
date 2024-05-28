@@ -1,3 +1,7 @@
+/*sundhed.css og vaerdier.css ligner meget hinanden, men jeg har valgt at lave to forskellige filer
+for at kunne ændre i dem indivieúelt hvis nødvendigt*/
+
+
 /*Styling af de forskellige tekster*/
 .tekst p {
     font-size: 1rem; /*Størrelser valgt ved Mockups*/
@@ -20,7 +24,8 @@ h1 {
     padding-top: 3rem;
     padding-bottom: 1rem;
     box-shadow: 0 5px 5px black;
-    font-size: 1.875rem; /*Størrelser valgt ved Mockups*/
+    font-size: 2.5rem; /*Størrelser valgt ved Mockups*/
+    margin-top: 0rem;
 }
 h4 {
     font-size: 1.5rem; /*Størrelser valgt ved Mockups*/
@@ -97,12 +102,11 @@ footer {
     h1 {
         text-align: left;
         padding-left: 2rem;
-        font-size: 2rem; /*Størrelser valgt ved Mockups*/
     }
 /*Ændringer af underoverksifter*/
     h4 {
         padding-left: 2rem;
-        font-size: 1.875rem;
+        font-size: 1.875rem; /*Størrelser valgt ved Mockups*/
     }
 /*Justeringen af placeringen af linjen, så den stadig et centreret under ordet*/
     hr {

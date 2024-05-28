@@ -1,88 +1,123 @@
-* {
-    padding: 0.2rem;
-}
-
-/*styling af tekster*/
+/*Styling af tekster*/
 h1 {
     text-align: center;
-    font-family: serif; /*Ændre til rigtig font senere*/
-    background-color: #C4E6BD;
+    font-family: "DM Serif Display", serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
+    background-color: #C4E6BD; /*Farvekoden til en 30% opacity af #39AD22*/
     padding-top: 3rem;
     padding-bottom: 1rem;
     box-shadow: 0 5px 5px black;
-    font-size: 2.5rem;
+    font-size: 2.5rem; /*Størrelser valgt ved Mockups*/
+    margin-top: 0rem;
 }
 h4 {
-    font-size: 1.875rem;
+    font-size: 1.875rem; /*Størrelser valgt ved Mockups*/
     text-align: left;
+    padding-left: 0.5rem;
+    font-family: "DM Serif Text", serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
 }
+/*Tyk skrift til produkt navne*/
 strong {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /*Størrelser valgt ved Mockups*/
 }
-a {
+/*Styling af link*/
+.link {
     text-decoration: underline;
-    color: #0000ee;
-    background-color: transparent;
+    color: #0000ee; /*Standard link farve*/
+    background-color: transparent; /*Ingen baggrund*/
 }
 
-/*opstilling af produktboks*/
+/*Opstilling af produktboks*/
+/*Alt indhold*/
 .klassiske {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
+/*Kun boksen*/
 .produktboks {
     border: solid 0.1rem black;
-    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
+/*De grå kasser i boksen*/
 .produkter1 {
-    background-color: #F6F6F6;
+    background-color: #F6F6F6; /*Grå baggrundfarve*/
     padding: 2rem;
+    box-shadow: inset 0px 1px 10px black;
 }
+/*De hvide kasser i boksen*/
 .produkter2 {
     padding: 2rem;
 }
-
-/*Blanke bokse til og fra*/
+/*Størrelse på dåse billederne*/
+.can {
+    width: 100%;
+}
+/*Kasser med sorte dåser gemt på mobil*/
 .hide {
     display: none;
 }
-/*Sorter knap*/
+/*Sorter knap på linje med underoverskrift*/
 .flex {
     display: flex;
     justify-content: space-between;
     margin-bottom: -1.5rem;
     padding-top: 3rem;
 }
+/*Styling af sorter knappen*/
 .sorter {
     margin-top: 2rem;
-    font-size: 1rem;
+    font-size: 1rem; /*Størrelser valgt ved Mockups*/
+    padding-right: 0.5rem;
+    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal; 
 }
-/*placering af knap*/
-button {
+/*Placering af knap*/
+.knap {
     position: relative;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+    -ms-transform: translate(-50%, -50%); /*Placere knappen i midten*/
+    transform: translate(-50%, -50%); /*Placere knappen i midten*/
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+/*'Flere produkter på vej' rykkes ind, skal skjules på desktop*/
+.none {
+    padding-left: 2rem;
+}
+/*Nederste link sætninger rykkes ind*/
+.links {
+    padding-left: 2rem;
+}
+/*Afstand til footer*/
+footer {
+    padding-top: 2rem;
 }
 
-.can {
-    width: 100%;
-}
 
-
-/*Media quieries ved desktop paa 800px*/
+/*Media quieries ved desktop på 700px, da dåserne her bliver skaleret for meget op, og den anden opsætning
+begynder at se ordentlig ud*/
 @media screen and (min-width: 700px) {
+
+/*Overskrift flyttes*/
     h1 {
         text-align: left;
         padding-left: 2rem;
     }
+/*Underoverskrift rykkes længere ind*/
+    h4 {
+        padding-left: 2rem;
+    }
+/*Produktboksen skifter retning fra column til row*/
     .produktboks {
         flex-direction: row;
         display: flex;
@@ -90,23 +125,39 @@ button {
         max-width: 80rem;
         align-self: center;
     }
+/*De skjulte eksta tomme kasser vises*/
     .hide {
         display: flex;
     }
+    /*Størrelse og placering af de sorte dåser, samt filter for at gøre dem sorte*/
     .blank {
         width: 100%;
-        filter: brightness(0%);
+        filter: brightness(0%); /*Ingen lys, derfor helt sort*/
         padding-bottom: 2.5rem;
     }
-    button {
+/*Sorter knap rykkes ind*/
+    .sorter {
+        padding-right: 2rem;
+    }
+/*Knap skifter placering*/
+    .knap {
         float: right;
         top: 0;
         left: 0;
-        -ms-transform: 0;
-    transform: 0;
-    margin-top: 3rem;
+        -ms-transform: 0; /*Ingen placering af knap*/
+        transform: 0; /*Ingen placering af knap*/
+        margin-top: 3rem;
     }
+/*'Flere proukter på vej' under boksen skjules*/
     .none {
         display: none;
+    }
+/*Justering af placering*/
+    .links {
+        padding-top: 3rem;
+    }
+/*Ny afstand til footer*/
+    footer {
+        margin-top: 5rem;
     }
 }

@@ -1,102 +1,296 @@
+/*Standard indstillinger*/
+* 
 
 /*Header*/
-/*styling af logo*/
-.logo {
-    margin-left: 0.7rem;
-    height: 3.2rem;
-}
-/*styling af burger icon*/
-#menu {
-    display: none;
-}
-.burgericon {
-    font-size: 2rem;
-    padding-right: 1rem;
-    position: relative;
-    text-align: right;
-}
-/*Vis og skjul dropdown menuen ved tryk paa burger icon*/
-.burger-menu:checked + .burgericon + .dropdown {
-    display: block;
-}
-/*styling af header*/
+/*Styling af navigationsbaren*/
 .navbar {
     display: flex;
     justify-content: space-between;
-    border-style: solid;
-    border-color: black;
-    overflow: hidden;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    border: solid 0.1rem black;
+    height: 3.5rem;
+    box-shadow: inset 0px 1px 10px black;
 }
-.navbar a {
-    float: left;
-    color: black;
-}
-/*Dropdown*/
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-.dropdown .dropbtn, .dropdropbtn, a {
-    background-color: white;
-    border: none;
-    color: black;
+/*Indhold i mobil navigationsbaren*/
+.logo {
+    width: 4rem;
+    padding-left: 0.6rem;
     box-shadow: none;
-    text-shadow: none;
-    text-decoration: none;
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
+.burger {
+    font-size: 2rem;
+    padding-right: 0.6rem;
+    margin-top: 0.2rem;
+    text-align: right;
+    z-index: 5; /*Placer burgermenuen øverst*/
 }
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.dropdropdown-content {
-    display: none;
-}
-.dropdown-content:hover .dropdropdown-content {
-    display: block;
-}
+/*Indhold/dropdown i burger menuen*/
 .dropdown {
-    display: none;
-}
-.burger:hover .dropdown {
-    display: block;
-}
-.dropdowns {
+    border: solid 0.1rem black;
     display: flex;
     flex-direction: column;
-    border: 0.1rem solid black;
+    font-size: 1.2rem;
+    background-color: white;
+    display: none;
 }
-.dropbtn {
-    line-height: 0.5;
+/*Dropdown menuen kommer frem ved hover, for da der ikke er nogen hover effekt på mobil, fungere det
+ligesom et klik*/
+.burger:hover .dropdown {
+    display: flex;
+}
+/*Hover effekt i dropdown menuen*/
+.dropdown a:hover {
+    color: #505050;
+}
+/*Teksten i dropdown menuen*/
+a {
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    padding: 0.2rem;
+}
+/*Indholdet i dropdown menuen*/
+.content {
+    line-height: 2rem;
+    text-align: left;
+    padding: 0.3rem;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+/*Dropdown menu inden i dropdown menuen*/
+.dropdropdown {
+    border: solid 0.1rem black;
+    flex-direction: column;
+    font-size: 1.2rem;
+    background-color: white;
+    display: none;
+    background-color: #ECECEC; /*For at kunne se lidt forskel på hvad der er drop menu, dropdrop menu og dropdropdrop menu*/
+    border-radius: 0.3rem;
+    border-top-left-radius: 0rem; /*Ingen afrundet kant i øverste venstre hjørne*/
+}
+/*Indholdet i dropdrop menuen*/
+.dropcontent {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem;
+    line-height: 1.7rem;
+    font-size: 1.3rem;
+}
+/*Hover effekt*/
+.dropdropdown a:hover {
+    color: #505050;
+}
+/*Dropdrop menuen kommer igen frem ved hover på dropdown indholdet*/
+.content:hover .dropdropdown {
+    display: flex;
+}
+/*Dropdown menu fra dropdropdown menuen*/
+.dropdropdropdown {
+    border: solid 0.1rem black;
+    flex-direction: column;
+    font-size: 1.2rem;
+    background-color: white;
+    display: none;
+    font-size: 1rem;
+    width: 10rem;
+    border-radius: 0.3rem;
+    border-top-left-radius: 0rem; /*Ingen afrundet kant i øverste venstre hjørne*/
+}
+/*Kommer igen frem ved hover*/
+.dropcontent:hover .dropdropdropdown {
+    display: flex;
+}
+/*<span> er brugt for at flytte pillen længere væk fra ordet, uden at lave afstand mellem ordene også*/
+span {
+    margin-left: 1.5rem; 
+}
+/*Der er fire steder hvor der er en pil, og de skal alle have en forskellig afstand i mellem sig, derfor
+har de alle fået deres egen class*/
+.flyt {
+    margin-left: 3rem;
+}
+.far {
+    margin-left: 4.35rem;
+}
+.further {
+    margin-left: 7.8rem;
+}
+/*Da jeg har lavet to navigationsbare, en til mobil og en til desktop, skal desktop versionen skjules
+når mobil versionen bliver vist*/
+.deskdrop {
+    display: none;
+}
+/*Stregerne skal ligeledes skjules på mobil*/
+.line {
+    display: none;
+}
+
+
+/*Media querie ved 980px da alt teksten på desktop versionen, først kan være der ved denne bredde*/
+@media screen and (min-width: 980px) {
+
+/*Ny placering af logo*/
+    .logo {
+        padding-left: 1rem;
+        padding-right: 2rem;
+    }
+/*Skjul burger menuen*/
+    .burger {
+        display: none;
+    }
+/*Menu punkterne i navigationsbaren*/
+    .deskdrop {
+        display: flex;
+        padding-right: 2rem;
+        overflow: hidden;
+        background-color: transparent; /*Så styling af navigationsbaren kan ses igennem*/
+    }
+/*Indholdet kommer frem ved hover*/
+    .deskdrop:hover .deskdrop-content {
+        display: block;
+    }
+/*Styling af teksten*/
+    .deskdrop a {
+        float: left;
+        text-align: center;
+        text-decoration: none;
+        padding-left: 0.3rem;
+    }
+/*Styling af dropdown indholdet*/
+    .deskdrop-content {
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        line-height: 2rem;
+        border: solid 0.1rem black;
+        border-radius: 0.3rem;
+        border-top-left-radius: 0rem; /*Ingen afrundet kant i øverste venstre hjørne*/
+        margin-top: 3rem;
+    }
+/*Hover effekt på indholdet*/
+    .deskdrop-content a:hover {
+        background-color: black;
+        color: white;
+    }
+/*Ens styling af knapperne, både ved menupunktere, og drop menu punkterne */
+    .deskdrop .dropbtn, .dropdropbtn {
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 1.3rem;
+        background-color: transparent; /*Så styling af navigationsbaren kan ses igennem*/
+        font-family: sans-serif;
+        box-shadow: none;
+    }
+/*Hover effekt ved menupunkterne*/
+    .dropbtn:hover {
+        color: #505050;
+    }
+/*Ens styling af begge lag dropdown menuer*/
+    .deskdrop-content, .deskdropdrop-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 10rem;
+        z-index: 1; /*Placere det foran*/
+    }
+/*Ens styling af teksten i begge lag dropdown menuer*/
+    .deskdrop-content a, .deskdropdrop-content a {
+        float: none;
+        color: black;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+/*Indiviuel styling af andet lag dropdown menu*/
+    .deskdropdrop-content {
+        font-size: 1rem;
+        font-family: sans-serif;
+        line-height: 2rem;
+        border: solid 0.1rem black;
+        border-radius: 0.3rem;
+        border-top-left-radius: 0rem; /*Ingen afrundet kant i øverste venstre hjørne*/
+        margin-left: 5rem;
+    }
+/*Andet lag dropdown vises ved hover på første lags dropdown*/
+    .deskdropdrop:hover .deskdropdrop-content {
+        display: block;
+    }
+/*Hover effekt på andet lag dropdown*/
+    .deskdropdrop-content a:hover {
+        background-color: black;
+        color: white;
+    }
+/*Individuel styling af knapperne i dropdown*/
+    .dropdropbtn {
+        font-size: 1.2rem;
+        padding: 0.4rem;
+    }
+/*Individuel hover effekt*/
+    .dropdropbtn:hover {
+        background-color: black;
+        color: white;
+    }
+/*Nye afstande til pillene*/
+    .far {
+        margin-left: 4.15rem;
+    }
+    .further {
+        margin-left: 4.3rem;
+    }
+/*Linjerne skal nu vises*/
+    .line {
+        display: block;
+        font-size: 2rem;
+        margin-top: 0.3rem;
+        padding-right: 2%; /*Linjen er placeret midt i mellem ordene*/
+        color: lightgrey;
+    }
+}
+
+/*Styling af knapper på alle sider*/
+.knap {
+    color: white;
+    background-color: #2658DB;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0.4rem; /*Afrundede kanter*/
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: none;
+}
+/*Hover effekt på knap*/
+.knap:hover {
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 
 /*Footer*/
-/*styling af ikoner*/
-.ikoner {
-    display: flex;
-    height: 2rem;
-    width: auto;
-    justify-content: center;
-    gap: 1rem;
-    padding-bottom: 2rem;
-}
-/*styling af tekst*/
+/*Opstilling til mobil og general styling*/
 .mobil {
     text-align: center;
     background-color: black;
     color: white;
     padding-bottom: 2rem;
 }
-.mobil p {
-    padding-top: 1rem;
+/*Standard styling af <p> tekst til både mobil og desktop*/
+p {
     font-family: "Istok Web", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal; 
 }
+/*Særlig styling til <p> på mobil*/
+.mobil p {
+    padding-top: 1rem;
+}
+/*Placering og styling af de tre ikoner*/
+.ikoner {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+/*Styling af link tekster på mobil*/
 .mobil a {
     color: white;
     background-color: black;
@@ -108,40 +302,25 @@
     font-weight: 400;
     font-style: normal;
 }
-.desktop {
-    display: none;
-}
+/*Afstand til footer*/
 footer {
     padding-top: 2rem;
 }
-/*styling af knapper*/
-button {
-    color: white;
-    background-color: #2658DB;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 0.4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    border: none;
-}
-button:hover {
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-p {
-    font-family: "Istok Web", sans-serif;
-    font-weight: 400;
-    font-style: normal; 
+/*Skjul desktop versionen/opstillingen*/
+.desktop {
+    display: none;
 }
 
 
-/*Media queries til desktop paa 600px*/
+/*Media querie til desktop ved 600px, da de tre kolonner tekst på desktop, ikke længere overlapper 
+hinanden ved denne størrelse*/
 @media screen and (min-width: 600px) {
+
+/*Skjul mobil version/opstilling*/
     .mobil {
         display: none;
     }
+/*Standard indstillinger til desktop opstillingen*/
     .desktop {
         display: flex;
         justify-content: space-between;
@@ -151,21 +330,24 @@ p {
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
-    .left {
-        padding-left: 5rem;
-    }
-    .right {
-        padding-right: 5rem;
-    }
-    .right a {
-        display: flex;
-        justify-content: flex-end;
-        padding-top: 3rem;
+/*Styling af link tekster på desktop*/
+    .desktop a {
         color: white;
+        background-color: black;
+        text-decoration: underline;
         font-family: "Istok Web", sans-serif;
         font-weight: 400;
         font-style: normal;
     }
+/*Placering af de venstre links*/
+    .left {
+        padding-left: 5rem;
+    }
+/*Placering af de højre links*/
+    .right {
+        padding-right: 5rem;
+    }
+/*Styling af venstre link tekst*/
     .left a {
         display: flex;
         justify-content: flex-start;
@@ -175,14 +357,17 @@ p {
         font-weight: 400;
         font-style: normal;
     }
-    .desktop a {
+/*Styling af højre link tekst*/
+    .right a {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 3rem;
         color: white;
-        background-color: black;
-        text-decoration: underline;
-        font-family: "Istok Web", sans-serif;
+        font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
         font-weight: 400;
         font-style: normal;
     }
+/*Placering af tlf nr. og e-mail*/
     .info {
         padding-top: 3rem;
     }

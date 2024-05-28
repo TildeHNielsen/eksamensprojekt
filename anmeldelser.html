@@ -27,8 +27,212 @@
 
 <body>
     <header>
-Indsæt navigationsbar her
-    </header>
+        <!--Navigationsbar til mobil-->
+                <nav class="navbar">
+                    <a class="logo" href="index.html"> <!--Logo er link til forsiden-->
+        
+        <!--Picture tag med webp og fallback til png-->
+                        <picture>
+                            <source type="image/webp" src="img/webp/logo.webp">
+                            <source type="image/png" src="img/png/logo.png">
+        
+                            <img class="logo" src="img/png/logo.png" alt="logo">
+                        </picture>
+                    </a>
+        
+        <!--UTF-8 symbol med hex kode til burger menu ikon-->
+                    <nav class="burger">&#9776;
+                        <nav class="dropdown">
+                            <nav class="content">
+        <!--Første lag dropdown-->
+                            <a href="#">Produkter</a>
+                            <nav class="dropdropdown">
+                                <nav class="dropcontent">
+        <!--Andet lag dropdown med UTF-8 pil ikon-->
+                                <a href="#">Alle produkter <span class="flyt">&#9655</span></a>
+                                <nav class="dropdropdropdown">
+        <!--Tredje lag dropdown-->
+                                    <a href="produkter.html">De klassiske øl</a>
+                                    <a href="produkter.html">Nyeste produkter</a>
+                                    <a href="produkter.html">Specialøl</a>
+                                    <a href="produkter.html">Anderledes smage</a>
+                                </nav>
+        <!--Fortsættelse på andet lag-->
+                                <a href="#">Ingredienser</a>
+                            </nav>
+                            </nav>
+                        </nav>
+        
+        <!--Fortsættelse på første lag-->
+                            <nav class="content">
+                            <a href="#">Information</a>
+                            <nav class="dropdropdown">
+                                <nav class="dropcontent">
+        <!--Resten af navigationsbaren fortsætter som forklaret ovenfor-->
+                                    <a href="#">Det gode valg <span class="far">&#9655</span></a>
+                                    <nav class="dropdropdropdown">
+                                        <a href="sundhed.html">Info om sundhed</a>
+                                        <a href="#">Bæredygtighed</a>
+                                        <a href="#">Sportslivet</a>
+                                    </nav>
+                                </nav>
+                                    <nav class="dropcontent">
+                                    <a href="#">Smagens udvikling <span>&#9655</span></a>
+                                    <nav class="dropdropdropdown">
+                                        <a href="#">Øl vs. sodavand</a>
+                                        <a href="#">Gæt smagen</a>
+                                    </nav>
+                                </nav>
+                                <nav class="dropcontent">
+                                <a href="#">Sådan støtter du andre</a>
+                            </nav>
+                            </nav>
+                        </nav>
+        
+                        <nav class="content">
+                            <a href="#">Køb</a>
+                            <nav class="dropdropdown">
+                                <nav class="dropcontent">
+                                    <a href="#">Køb her</a>
+                                    <a href="#">Hvor sælger vi?</a>
+                                    <a href="#">Prissammenligning</a>
+                                </nav>
+                            </nav>
+                        </nav>
+        
+                        <nav class="content">
+                            <a href="#">Events</a>
+                            <nav class="dropdropdown">
+                                <nav class="dropcontent">
+                                    <a href="#">Alkoholfri ølsmagning</a>
+                                    <a href="#">Alkoholfri Workshop</a>
+                                </nav>
+                            </nav>
+                        </nav>
+        
+                        <nav class="content">
+                            <a href="#">Om ZeroBuzz Brew</a>
+                            <nav class="dropdropdown">
+                                <nav class="dropcontent">
+                                <a href="#">Om os <span class="further">&#9655</span></a>
+                                <nav class="dropdropdropdown">
+                                    <a href="#">Vores historie</a>
+                                    <a href="vaerdier.html">Vores værdier</a>
+                                    <a href="#">Sådan hjælper vi dig</a>
+                                </nav>
+                                <a href="anmeldelser.html">Anmeldelser</a>
+                                <a href="#">Følg os</a>
+                            </nav>
+                            </nav>
+                        </nav>
+        
+                        <nav class="content">
+                            <a href="#">Kontakt</a>
+                            <nav class="dropdropdown">
+                                <nav class="dropcontent">
+                                    <a href="#">Kontakt</a>
+                                    <a href="#">FAQ</a>
+                                    <a href="#">Støt os</a>
+                                </nav>
+                            </nav>
+                        </nav>
+                        </nav>
+                    </nav>
+        
+        <!--Navbar til desktop-->
+                    <nav class="deskdrop">
+        <!--Knap til dropdown-->
+                        <button class="dropbtn">Produkter</button>
+                        <nav class="deskdrop-content">
+                            <nav class="deskdropdrop">
+        <!--Dropdown med UTF-8 pil ikon til andet lag dropdown-->
+                                <button class="dropdropbtn">Alle produkter <span>&#9655</span></button>
+        <!--Andet lag dropdown-->
+                                <nav class="deskdropdrop-content">
+                                    <a href="produkter.html">De klassiske øl</a>
+                                    <a href="produkter.html">Nyeste produkter</a>
+                                    <a href="produkter.html">Specialøl</a>
+                                    <a href="produkter.html">Anderledes smage</a>
+                                </nav>
+                            </nav>
+        <!--Fortsættelse på første lag dropdown-->
+                            <a href="#">Ingredienser</a>
+                        </nav>
+                    </nav>
+        <!--Linje mellem menupunkterne-->
+        <p class="line">|</p>
+        
+        <!--Nyt menupunkt, fortsætter som beskrevet ovenfor-->
+                        <nav class="deskdrop">
+                        <button class="dropbtn">Information</button>
+                        <nav class="deskdrop-content">
+                            <nav class="deskdropdrop">
+                                <button class="dropdropbtn">Det gode valg <span class="far">&#9655</span></button>
+                                <nav class="deskdropdrop-content">
+                                    <a href="sundhed.html">Info om sundhed</a>
+                                    <a href="#">Bæredygtighed</a>
+                                    <a href="#">Sportslivet</a>
+                                </nav>
+                            </nav>
+                            <nav class="deskdropdrop">
+                                <button class="dropdropbtn">Smagens udvikling <span>&#9655</span></button>
+                                <nav class="deskdropdrop-content">
+                                    <a href="#">Øl vs. sodavand</a>
+                                    <a href="#">Gæt smagen</a>
+                                </nav>
+                            </nav>
+                            <a href="#">Sådan støtter du andre</a>
+                        </nav>
+                    </nav>
+        <p class="line">|</p>
+        
+                    <nav class="deskdrop">
+                        <button class="dropbtn">Køb</button>
+                        <nav class="deskdrop-content">
+                            <a href="#">Køb her</a>
+                            <a href="#">Hvor sælger vi?</a>
+                            <a href="#">Prissammenligning</a>
+                        </nav>
+                    </nav>
+        
+        <p class="line">|</p>
+                    <nav class="deskdrop">
+                        <button class="dropbtn">Events</button>
+                        <nav class="deskdrop-content">
+                            <a href="#">Alkoholfri ølsmagning</a>
+                            <a href="#">Alkoholfri Workshop</a>
+                        </nav>
+                    </nav>
+        
+        <p class="line">|</p>
+                    <nav class="deskdrop">
+                        <button class="dropbtn">Om ZeroBuzz Brew</button>
+                        <nav class="deskdrop-content">
+                            <nav class="deskdropdrop">
+                                <button class="dropdropbtn">Om os <span class="further">&#9655</span></button>
+                                <nav class="deskdropdrop-content">
+                                    <a href="#">Vores historie</a>
+                                    <a href="vaerdier.html">Vores værdier</a>
+                                    <a href="#">Sådan hjælper vi dig</a>
+                                </nav>
+                            </nav>
+                            <a href="anmeldelser.html">Anmeldelser</a>
+                            <a href="#">Følg os</a>
+                        </nav>
+                    </nav>
+                    
+        <p class="line">|</p>
+                    <nav class="deskdrop">
+                        <button class="dropbtn">Kontakt</button>
+                        <nav class="deskdrop-content">
+                            <a href="#">Kontakt</a>
+                            <a href="#">FAQ</a>
+                            <a href="#">Støt os</a>
+                        </nav>
+                    </nav>
+                    </nav>
+                </nav>
+        </header>
     
     <main>
 <!--Overskrift-->
@@ -157,52 +361,55 @@ brugt 5 helt fyldte i stedet for-->
 
 
     <footer>
-<!--Jeg har lavet to forskellige opsætninger til footeren, da jeg ikke kunne gennemskue hvordan jeg skulle
-ændre opsætningen på min ønskede måde blot med CSS, der er derfor brugt display:none i stedet-->
-
+        <!--Jeg har lavet to forskellige opsætninger til footeren, da jeg ikke kunne gennemskue hvordan jeg skulle
+        ændre opsætningen på min ønskede måde blot med CSS, der er derfor brugt display:none i stedet-->
+        
         <!--Footer opstilling til mobil--> 
                 <section class="mobil">
-                    <p><b>ZeroBuzzBrew</b></p>
+        <!--Overskrift-->
+                <p><b>ZeroBuzzBrew</b></p>
+        <!--De tre ikoner som skal være links, men da sidere ikke eksisterer sker der ikke noget ved klik-->
                 <figure class="ikoner">
-                    <a href="##" class="ikoner">
-                        <img src="img/facebook.svg" alt="facebook">
+                    <a href="#" class="ikoner">
+                        <img src="img/png/facebook.png" alt="facebook">
                     </a>
-                    <a href="##" class="ikoner">
-                        <img src="img/instagram.webp" alt="instagram">
+                    <a href="#" class="ikoner">
+                        <img src="img/png/instagram.png" alt="instagram">
                     </a>
-                    <a href="##" class="ikoner">
-                        <img src="img/twitter.png" alt="twitter">
+                    <a href="#" class="ikoner">
+                        <img src="img/png/twitter.png" alt="twitter">
                     </a>
                 </figure>
-
+        <!--Alle shortcuts-->
                 <a href="produkter.html">Se produkter</a>
-                <a href="#">Kontakt</a>
-                <a href="#">FAQ</a>
-                <a href="#">Støt os</a>
+                <a href="##">Kontakt</a>
+                <a href="##">FAQ</a>
+                <a href="##">Støt os</a>
                 <a href="anmeldelser.html">Anmeldelser</a>
-                <a href="#">Om os</a>
+                <a href="##">Om os</a>
                 <a href="vaerdier.html">Vores værdier</a>
             </section>
         
         <!--Footer opstilling til desktop-->
             <section class="desktop">
+        <!--Venstre side i flex-->
                 <section class="left">
                     <a href="##">Kontakt</a>
                     <a href="##">FAQ</a>
                     <a href="##">Støt os</a>
                 </section>
-
+        <!--Midten af flex-->
                 <section>
                     <p><b>ZeroBuzzBrew</b></p>
                 <figure class="ikoner">
-                    <a href="##" class="ikoner">
-                        <img src="img/facebook.svg" alt="facebook">
+                    <a href="#" class="ikoner">
+                        <img src="img/png/facebook.png" alt="facebook">
                     </a>
-                    <a href="##" class="ikoner">
-                        <img src="img/instagram.webp" alt="instagram">
+                    <a href="#" class="ikoner">
+                        <img src="img/png/instagram.png" alt="instagram">
                     </a>
-                    <a href="##" class="ikoner">
-                        <img src="img/twitter.png" alt="twitter">
+                    <a href="#" class="ikoner">
+                        <img src="img/png/twitter.png" alt="twitter">
                     </a>
                 </figure>
                     <a href="produkter.html">Se produkter</a>
@@ -210,15 +417,14 @@ brugt 5 helt fyldte i stedet for-->
                     <p>+45 56 67 89 56</p>
                     <p>zerobuzzbrew@gmail.com</p>
                 </section>
+        <!--Højre side af flex-->
                 </section>
-
                 <section class="right">
                     <a href="anmeldelser.html">Anmeldelser</a>
                     <a href="##">Om os</a>
                     <a href="vaerdier.html">Vores værdier</a>
                 </section>
             </section>
-
             </footer>
 </body>
 </html>
