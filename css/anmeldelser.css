@@ -1,21 +1,54 @@
+/*Standard indstillinger for Anmeldelser*/
 * {
     padding: 0.2rem;
 }
-/*Faa p til at ligne et link*/
-.link {
-    text-decoration: underline;
+
+/*Almindelig styling af forskellige typer tekst*/
+p {
+    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
 }
-/*styling af tekst*/
+.sorter p {
+    margin-bottom: -1.2rem;
+}
 h1 {
     text-align: center;
-    font-family: serif; /*Ændre til rigtig font senere*/
-    background-color: #C4E6BD;
+    font-family: "DM Serif Display", serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
+    background-color: #C4E6BD; /*Farvekoden til en 30% opacity af #39AD22*/
     padding-top: 3rem;
     padding-bottom: 1rem;
     box-shadow: 0 5px 5px black;
-    font-size: 2.5rem;
+    font-size: 2.5rem; /*Størrelser valgt ved Mockups*/
 }
-/*styling anmeldelses boks*/
+/*Få <p> til at ligne et understreget link*/
+.link {
+    text-decoration: underline;  
+}
+/*Forskellig styling af den øverste stjerne anmeldelse, og dem inden i anmeld kasserne*/
+.stars {
+    text-align: center;
+    font-size: 2rem; /*Størrelser valgt ved Mockups*/
+    color: #F1DD29;
+    border: solid 0.1rem black;
+    width: 15rem;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.starsin {
+    color: #F1DD29;
+    font-size: 2rem; /*Størrelser valgt ved Mockups*/
+    margin-bottom: -0.7rem;
+    margin-top: -0.1rem;
+}
+/*Mellemrum mellem sorter knap og 'Skriv en amneldelse' tekst*/
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+/*Styling af anmeld kasserne*/
 .anmeld {
     border: solid 0.1rem black;
     text-align: center;
@@ -23,71 +56,91 @@ h1 {
     padding-top: 0.1rem;
     margin-bottom: 3rem;
 }
+/*Placering af upload teksten*/
 .righte {
     text-align: right;
+    margin-right: -1rem;
 }
-/*styling af stjerner*/
-.stars {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #F1DD29;
-    border: solid 0.1rem black;
-    padding-bottom: 0.5rem;
-    width: 15rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-.starsin {
-    color: #F1DD29;
-    font-size: 2rem;
-    margin-bottom: -0.7rem;
-    margin-top: -0.1rem;
-}
-/*styling af sorter knapper*/
-.flex {
-    display: flex;
-    justify-content: space-between;
-}
+/*Styling og placering af anmeld kasseres indhold*/
 .part1 {
     display: block;
 }
-/*daaser*/
+.tekst {
+    text-align: left;
+}
+/*Placering af billederne af dåserne*/
 img {
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+/*Afstand til footer*/
+footer {
+    padding-top: 5rem;
 }
 
-/*Media queries*/
-@media screen and (min-width: 700px) {
-    .anmeld {
-        display: flex;
-        flex-direction: column;
-    }
-    .part1 {
-        display: flex;
-    }
-    .tekst {
-        padding-top: 2.5rem;
-        text-align: left;
-    }
-    .righte {
-        margin-right: -1rem;
-    }
-    .starsin {
-        border: solid 0.1rem black;
-        padding-bottom: 0.5rem;
-        width: 12rem;
-        margin-bottom: 1rem;
-        margin-top: -3rem;
-    }
-    .stars {
-        margin-left: 100;
-        margin-right: 0;
-    }
-    h1 {
-        text-align: left;
-        padding-left: 2rem;
-    }
+
+
+/*Media queries ved 750px, som en balance imellem af dåserne ikke bliver for store, men opsætningen
+også stadig ser nogenlunde ordentlig ud*/
+@media screen and (min-width: 750px) {
+
+
+/*Ændringer i placeringen af overskriften*/
+h1 {
+    text-align: left;
+    padding-left: 2rem;
+}
+/*Placer link længere inde på siden, i række med de andre elementer*/
+.link {
+    margin-left: 3rem;
+}
+/*Ændringer i placeringen af stjerne boksen, samt størrelsen*/
+.stars {
+    margin-right: 3rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem; /*Størrelser valgt ved Mockups*/
+    padding-left: 2rem;
+    padding-right: 2rem
+}
+/*Ændringer i placering og størrelse, samt komme en kant rundt om*/
+.starsin {
+    border: solid 0.1rem black;
+    width: 12rem;
+    margin-bottom: 1rem;
+    margin-top: -3rem;
+    font-size: 2rem; /*Størrelser valgt ved Mockups*/
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+/*Placering af sorter boksen*/
+.sorter {
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+}
+/*Ny opstilling i anmeld kasserne*/
+.anmeld {
+    display: flex;
+    flex-direction: column;
+    border: solid 0.3rem black;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+.righte {
+    margin-right: -1rem;
+}
+.part1 {
+    display: flex;
+}
+.tekst {
+    padding-top: 2.5rem;
+    text-align: left;
+    margin-left: 3rem;
+}
+/*Længere afstand til footeren*/
+footer {
+    padding-top: 15rem;
+}   
 }

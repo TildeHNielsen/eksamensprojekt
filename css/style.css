@@ -93,6 +93,9 @@
 }
 .mobil p {
     padding-top: 1rem;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .mobil a {
     color: white;
@@ -101,6 +104,9 @@
     display: flex;
     justify-content: center;
     padding-bottom: 1rem;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .desktop {
     display: none;
@@ -123,6 +129,11 @@ button {
 }
 button:hover {
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+p {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
 }
 
 
@@ -151,17 +162,26 @@ button:hover {
         justify-content: flex-end;
         padding-top: 3rem;
         color: white;
+        font-family: "Istok Web", sans-serif;
+        font-weight: 400;
+        font-style: normal;
     }
     .left a {
         display: flex;
         justify-content: flex-start;
         padding-top: 3rem;
         color: white;
+        font-family: "Istok Web", sans-serif;
+        font-weight: 400;
+        font-style: normal;
     }
     .desktop a {
         color: white;
         background-color: black;
         text-decoration: underline;
+        font-family: "Istok Web", sans-serif;
+        font-weight: 400;
+        font-style: normal;
     }
     .info {
         padding-top: 3rem;

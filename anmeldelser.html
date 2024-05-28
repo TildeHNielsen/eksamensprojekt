@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+
 <!--Meta tags for bedre SEO-->
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Kunder vurdere de alkoholfri øl med anmeldelser">
+    <meta name="keywords" content="billig øl, godt øl, smagen af øl, fællesskab, alkoholfri øl kalorier, bedste alkoholfri øl, alkoholfri øl">
     <meta name="author" content="ZeroBuzz Brew">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,72 +13,90 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/anmeldelser.css">
 
+<!--Link til favicon-->
+    <link rel="icon" type="image/x-icon" href="img/webp/logo.webp">
+
+<!--Link til Google fonts: DM Serif Display, DM Serif Text og Istok Web-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <title>Anmeldelser</title>
+
 </head>
+
 <body>
     <header>
-Navigationsbar
+Indsæt navigationsbar her
     </header>
     
     <main>
+<!--Overskrift-->
         <h1>Anmeldelser</h1>
 
-<!--UTF-8 symbols med hex kode-->
-        <p class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+<!--UTF-8 symbols med hex kode til at lave stjerner. Da der ikke er nogen halv fyldt stjerne, har jeg bare
+brugt 5 helt fyldte i stedet for-->
+        <p class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
 
-        <section class="flex">
-<p class="link">Skriv en anmeldelse</p>
+<!--'Skriv en anmeldese' og sorter boks er sat i samme <section> for at kunne bruge flex-->
+    <section class="flex">
+        <p class="link">Skriv en anmeldelse</p>
 
-<section class="sorter">
-    <form action="##">
-        Sorter efter: <br>
-        <select name="sorter" id="sorter">
-            <option value="nyeste">Nyeste</option>
-            <option value="1-5">1-5 stjerner</option>
-            <option value="5-1">5-1 stjerner</option>
-            <option value="produkt">Produkt</option>
-        </select>
-    </form>
-</section>
-</section>
+        <section class="sorter">
+            <form action="##">
+                <p>Sorter efter: </p><br>
+                    <select name="sorter" id="sorter">
+                        <option value="nyeste">Nyeste</option>
+                        <option value="1-5">1-5 stjerner</option>
+                        <option value="5-1">5-1 stjerner</option>
+                        <option value="produkt">Produkt</option>
+                    </select>
+            </form>
+        </section>
+    </section>
 
-<section class="anmeld">
-<p class="righte">Upload: 27/03/2024</p>
-<section class="part1">
+<!--Opsætning af en anmeldelse, sat i flere <section>s for at kunne lave om på opsætningen på desktop-->
+    <section class="anmeld"> <!--Hele kassen-->
+        <p class="righte">Upload: 27/03/2024</p> <!--Kun upload-->
+    <section class="part1"> <!--Stjerner og produkt billede-->
     <section>
-<p class="starsin">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
-<img src="img/png/can2.png" alt="can">
-</section>
-<section class="tekst">
-<p><b>Den bedste alkoholfrie øl</b></p>
-<p>En rigtig god øl til en virkelig god pris! Jeg har længe ledt efter en alkoholfri øl, der smager 
-    præcis som dem med alkohol, men uden held. Jeg var derfor meget skeptisk da jeg først prøvede dette 
-    produkt, men må indrømme at de har ramt smagen til perfektion. Vil klart anbefale den til andre, 
-    som ligesom mig, elsker øl smagen men ikke vil drikke dem med
-    alkohol.</p>
-</section>
-</section>
-</section>
-<section class="anmeld">
-    <p class="righte">Upload: 10/03/2024</p>
+        <p class="starsin">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+        <img src="img/png/can2.png" alt="can">
+    </section>
+    <section class="tekst"> <!--Alt tekst-->
+        <p><b>Den bedste alkoholfrie øl</b></p> <!--Overskirft med tyk-->
+        <p>En rigtig god øl til en virkelig god pris! Jeg har længe ledt efter en alkoholfri øl, der smager 
+            præcis som dem med alkohol, men uden held. Jeg var derfor meget skeptisk da jeg først prøvede dette 
+            produkt, men må indrømme at de har ramt smagen til perfektion. Vil klart anbefale den til andre, 
+            som ligesom mig, elsker øl smagen men ikke vil drikke dem med
+            alkohol.</p>
+    </section>
+    </section>
+    </section>
+
+<!--Anmeldelse 2, samme opsætning-->
+    <section class="anmeld">
+        <p class="righte">Upload: 10/03/2024</p>
     <section class="part1">
-        <section>
-    <p class="starsin">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
-    <img src="img/png/can1.png" alt="can">
-</section>
-<section class="tekst">
-    <p><b>Smager præcis som rigtig øl, mangler dog et større udvalg</b></p>
-    <p>Et helt fint produkt som jeg klart vil anbefale videre. Smagen er rigtig god, og man kan slet 
+    <section>
+        <p class="starsin">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+        <img src="img/png/can1.png" alt="can">
+    </section>
+    <section class="tekst">
+        <p><b>Smager præcis som rigtig øl, mangler dog et større udvalg</b></p>
+        <p>Et helt fint produkt som jeg klart vil anbefale videre. Smagen er rigtig god, og man kan slet 
         ikke smage forskel på de rigtige og denne. Jeg ville dog ønske lidt flere klassiske 
         valgmuligheder, men er selvfølgelig med på at de tager tid at udvikle, så jeg vil helt klart 
         holde mig opdateret på siden fremover.</p>
     </section>
     </section>
     </section>
+
+<!--Anmeldelse 3-->
     <section class="anmeld">
         <p class="righte">Upload: 25/02/2024</p>
-        <section class="part1">
-            <section>
+    <section class="part1">
+    <section>
         <p class="starsin">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
         <img src="img/png/can4.png" alt="can">
     </section>
@@ -88,57 +107,62 @@ Navigationsbar
             bliver lavet. Jeg håber selvfølgelig at der komme masser flere muligheder i fremtiden, men 
             for nu er jeg helt tilfreds med dette udvalg, da det er større end hvad de fleste andre 
             tilbyder.</p>
-        </section>
-        </section>
-        </section>
-        <section class="anmeld">
-            <p class="righte">Upload: 05/01/2024</p>
-            <section class="part1">
-                <section>
-            <p class="starsin">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
-            <img src="img/png/can6.png" alt="can">
-        </section>
-        <section class="tekst">
-            <p><b>Kan klart anbefales</b></p>
-            <p>Jeg har aldrig været så glad for øl smagen, så plejer at holde mig til andre alkoholiske 
-                drikkevarer, og de gange hvor jeg har holdt mig til det alkoholfrie i stedet, er jeg 
-                endt med en sodavand eller lignende. Men da jeg hørte om dette produkt, tænkte jeg 
-                straks at det var noget jeg måtte prøve, og må helt klart sige at jeg ikke er blevet 
-                skuffet.
-                Selvom jeg stadig drikker alkohol, er dette et super godt alternativ til de dage, hvor 
-                jeg af diverse grunde gerne vil holde mit alkoholindtag nede, men samtidig føle mig som 
-                en del af fællesskabet, da de fleste jeg kender elsker øl.</p>
-            </section>
-            </section>
-            </section>
-            <section class="anmeld">
-                <p class="righte">Upload: 02/01/2024</p>
-                <section class="part1">
-                    <section>
-                <p class="starsin">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
-                <img src="img/png/can5.png" alt="can">
-            </section>
-            <section class="tekst">
-                <p><b>De smager bare godt</b></p>
-                <p>Nu har jeg prøvet alle øl her på siden, og må klart sige at denne med Lime og 
-                    cherimoya er min yndlings. Selvom jeg sagtens kan lide øl smagen, må jeg sige at 
-                    dette er endnu bedre. Selvom den smager langt fra traditionel øl, får jeg stadig en 
-                    klar fornemmelse af at det er det jeg drikker, ved simpelthen ikke hvordan, men det 
-                    er godt gået må jeg sige. Håber der kommer flere smage i fremtiden, for så skal de 
-                    helt sikkert også prøves.</p>
-                </section>
-                </section>
-                </section>
+    </section>
+    </section>
+    </section>
 
+<!--Anmeldelse 4-->
+    <section class="anmeld">
+        <p class="righte">Upload: 05/01/2024</p>
+    <section class="part1">
+    <section>
+        <p class="starsin">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+        <img src="img/png/can6.png" alt="can">
+    </section>
+    <section class="tekst">
+        <p><b>Kan klart anbefales</b></p>
+        <p>Jeg har aldrig været så glad for øl smagen, så plejer at holde mig til andre alkoholiske 
+            drikkevarer, og de gange hvor jeg har holdt mig til det alkoholfrie i stedet, er jeg 
+            endt med en sodavand eller lignende. Men da jeg hørte om dette produkt, tænkte jeg 
+            straks at det var noget jeg måtte prøve, og må helt klart sige at jeg ikke er blevet 
+            skuffet.
+            Selvom jeg stadig drikker alkohol, er dette et super godt alternativ til de dage, hvor 
+            jeg af diverse grunde gerne vil holde mit alkoholindtag nede, men samtidig føle mig som 
+            en del af fællesskabet, da de fleste jeg kender elsker øl.</p>
+    </section>
+    </section>
+    </section>
 
+<!--Anmeldelse 5--> 
+    <section class="anmeld">
+        <p class="righte">Upload: 02/01/2024</p>
+    <section class="part1">
+    <section>
+        <p class="starsin">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+        <img src="img/png/can5.png" alt="can">
+    </section>
+    <section class="tekst">
+        <p><b>De smager bare godt</b></p>
+        <p>Nu har jeg prøvet alle øl her på siden, og må klart sige at denne med Lime og 
+            cherimoya er min yndlings. Selvom jeg sagtens kan lide øl smagen, må jeg sige at 
+            dette er endnu bedre. Selvom den smager langt fra traditionel øl, får jeg stadig en 
+            klar fornemmelse af at det er det jeg drikker, ved simpelthen ikke hvordan, men det 
+            er godt gået må jeg sige. Håber der kommer flere smage i fremtiden, for så skal de 
+            helt sikkert også prøves.</p>
+    </section>
+    </section>
+    </section>
 
     </main>
 
 
     <footer>
+<!--Jeg har lavet to forskellige opsætninger til footeren, da jeg ikke kunne gennemskue hvordan jeg skulle
+ændre opsætningen på min ønskede måde blot med CSS, der er derfor brugt display:none i stedet-->
+
         <!--Footer opstilling til mobil--> 
                 <section class="mobil">
-                <p><b>ZeroBuzzBrew</b></p>
+                    <p><b>ZeroBuzzBrew</b></p>
                 <figure class="ikoner">
                     <a href="##" class="ikoner">
                         <img src="img/facebook.svg" alt="facebook">
@@ -150,12 +174,13 @@ Navigationsbar
                         <img src="img/twitter.png" alt="twitter">
                     </a>
                 </figure>
+
                 <a href="produkter.html">Se produkter</a>
-                <a href="##">Kontakt</a>
-                <a href="##">FAQ</a>
-                <a href="##">Støt os</a>
+                <a href="#">Kontakt</a>
+                <a href="#">FAQ</a>
+                <a href="#">Støt os</a>
                 <a href="anmeldelser.html">Anmeldelser</a>
-                <a href="##">Om os</a>
+                <a href="#">Om os</a>
                 <a href="vaerdier.html">Vores værdier</a>
             </section>
         
@@ -166,6 +191,7 @@ Navigationsbar
                     <a href="##">FAQ</a>
                     <a href="##">Støt os</a>
                 </section>
+
                 <section>
                     <p><b>ZeroBuzzBrew</b></p>
                 <figure class="ikoner">
@@ -185,13 +211,14 @@ Navigationsbar
                     <p>zerobuzzbrew@gmail.com</p>
                 </section>
                 </section>
+
                 <section class="right">
                     <a href="anmeldelser.html">Anmeldelser</a>
                     <a href="##">Om os</a>
                     <a href="vaerdier.html">Vores værdier</a>
                 </section>
             </section>
+
             </footer>
-    
 </body>
 </html>

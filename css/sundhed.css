@@ -1,26 +1,56 @@
 /*Styling af de forskellige tekster*/
-h1 {
-    text-align: center;
-    font-family: serif; /*Ændre til rigtig font senere*/
-    background-color: #C4E6BD;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
-    box-shadow: 0 5px 5px black;
-    font-size: 1.875rem;
-}
-h4 {
-    font-size: 1.5rem;
-    padding-left: 1rem;
-    padding-top: 2rem;
-    margin-bottom: -0.1rem;
-}
 .tekst p {
-    font-size: 1,06rem;
+    font-size: 1rem; /*Størrelser valgt ved Mockups*/
     padding-left: 1rem;
     padding-right: 1rem;
     margin-bottom: -1rem;
+    line-height: 1.5rem;
+    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
-/*gøre stregen under ordet kortere*/
+h1 {
+    text-align: center;
+    font-family: "DM Serif Display", serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
+    background-color: #C4E6BD; /*Farvekoden til en 30% opacity af #39AD22*/
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 5px 5px black;
+    font-size: 1.875rem; /*Størrelser valgt ved Mockups*/
+}
+h4 {
+    font-size: 1.5rem; /*Størrelser valgt ved Mockups*/
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    margin-bottom: -0.1rem;
+    font-family: "DM Serif Text", serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
+}
+/*Placering af overskrift*/
+.overskrift {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+/*Teksten i <li> tag*/
+li {
+    padding-bottom: 3rem;
+    padding-right: 1.5rem;
+    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
+}
+/*Få <a> til at ligne et almindeligt link*/
+.link {
+    text-decoration: underline;
+    color: #0000EE; /*Den almindelige link farve*/
+}
+/*Justering af størrelsen og andet på stregen under 'Facts'*/
 hr {
     margin-top: 0.1rem;
     height: 0.1rem;
@@ -28,19 +58,10 @@ hr {
     border: none;
     width: 3rem;
 }
-
-/*opstilling af billede i boks*/
-img {
-    box-shadow: 0px 0px 15px black;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-/*Boksen*/
+/*Styling af tekst boksen*/
 .boks {
     background-color: #F8EE94;
-    border-radius: 0.3rem;
+    border-radius: 0.3rem; /*Afrundede kanter*/
     padding-bottom: 3rem;
     width: 90%;
     display: block;
@@ -50,36 +71,63 @@ img {
     margin-bottom: 7rem;
     margin-top: 5rem;
 }
-li {
-    padding-bottom: 3rem;
-    padding-right: 1.5rem;
-}
-.overskrift {
-    text-align: center;
-    padding-bottom: 1rem;
-}
-.flex {
+/*Få billedet til at være i midten af boksen og andre justeringer*/
+img {
+    box-shadow: 0px 0px 15px black;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
 }
-
-
-/*Media quieries ved desktop paa 800px*/
-@media screen and (min-width: 800px) {
+/*Teksten og boksen er sat i en <section> for at kunne opstille dem med flexbox på desktop*/
 .flex {
-    display: flex;
+    display: block; /*Skal ikke være flex på mobil*/
 }
-.boks {
-    width: 25rem;
-    margin-right: 1rem;
-    margin-left: 2rem;
-    margin-bottom: 3rem;
+/*Afstand til footer*/
+footer {
+    padding-top: 3rem;
 }
-h1 {
-    text-align: left;
-    padding-left: 2rem;
-}
-.tekst {
-    padding-right: 2rem;
-    padding-left: 2rem;
-}
+
+
+
+
+/*Media quieries ved 900px da den anden opstilling først ser ordentlig ud her*/
+@media screen and (min-width: 900px) {
+
+/*Ny placering af overskrift*/
+    h1 {
+        text-align: left;
+        padding-left: 2rem;
+        font-size: 2rem; /*Størrelser valgt ved Mockups*/
+    }
+/*Ændringer af underoverksifter*/
+    h4 {
+        padding-left: 2rem;
+        font-size: 1.875rem;
+    }
+/*Justeringen af placeringen af linjen, så den stadig et centreret under ordet*/
+    hr {
+        margin-left: 11rem;
+    }
+/*Ændringer af tekst boksen*/
+    .boks {
+        width: 25rem;
+        margin-right: 1rem;
+        margin-left: 2rem;
+        margin-bottom: 3rem;
+        margin-top: 9rem;
+        padding-bottom: 4rem;
+    }
+/*Teksten og tekst boksen ændres til flex*/
+    .flex {
+        display: flex;
+    }
+/*Ændringer af padding til teksten*/
+    .tekst {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+/*Anden afstand til footer*/
+    footer {
+        padding-top: 10rem;
+    }
 }
