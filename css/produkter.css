@@ -11,13 +11,30 @@ h1 {
     font-size: 2.5rem; /*Størrelser valgt ved Mockups*/
     margin-top: 0rem;
 }
-h4 {
+h2 {
     font-size: 1.875rem; /*Størrelser valgt ved Mockups*/
     text-align: left;
     padding-left: 0.5rem;
     font-family: "DM Serif Text", serif; /*Taget fra Google fonts*/
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 3rem;
+}
+h3 {
+    font-size: 1.0625rem; /*Størrelser valgt ved Mockups*/
+    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal; 
+    margin-bottom: -0.5rem;
+    margin-top: 1rem;
+}
+h4 {
+    font-size: 1.0625rem; /*Størrelser valgt ved Mockups*/
+    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: -0.5rem;
+    margin-top: 1rem;
 }
 /*Tyk skrift til produkt navne*/
 strong {
@@ -72,12 +89,13 @@ strong {
 }
 /*Styling af sorter knappen*/
 .sorter {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     font-size: 1rem; /*Størrelser valgt ved Mockups*/
     padding-right: 0.5rem;
     font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
     font-weight: 400;
     font-style: normal; 
+    text-align: left;
 }
 /*Placering af knap*/
 .knap {
@@ -113,8 +131,16 @@ begynder at se ordentlig ud*/
         padding-left: 2rem;
     }
 /*Underoverskrift rykkes længere ind*/
-    h4 {
+    h2 {
         padding-left: 2rem;
+    }
+/*Ny skriftstørrelse*/
+h3 {
+    font-size: 1.125; /*Størrelser valgt ved Mockups*/
+}
+/*Ny skriftstørrelse*/
+    h4 {
+        font-size: 1.125; /*Størrelser valgt ved Mockups*/
     }
 /*Produktboksen skifter retning fra column til row*/
     .produktboks {
@@ -132,7 +158,8 @@ begynder at se ordentlig ud*/
     .blank {
         width: 100%;
         filter: brightness(0%); /*Ingen lys, derfor helt sort*/
-        padding-bottom: 2.5rem;
+        padding-bottom: 4rem;
+        padding-top: 1rem;
     }
 /*Sorter knap rykkes ind*/
     .sorter {

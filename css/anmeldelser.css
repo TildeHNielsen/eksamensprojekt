@@ -6,6 +6,7 @@ p {
 }
 .sorter p {
     margin-bottom: -1.2rem;
+    margin-right: 0.5rem;
 }
 h1 {
     text-align: center;
@@ -19,7 +20,7 @@ h1 {
     font-size: 2.5rem; /*Størrelser valgt ved Mockups*/
     margin-top: 0rem;
 }
-h6 {
+h2, h3 {
     font-size: 1.0625rem;
     font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
     font-weight: 400;
@@ -80,7 +81,6 @@ picture {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
 }
 /*Afstand til footer*/
 footer {
@@ -100,7 +100,7 @@ h1 {
     padding-left: 2rem;
 }
 /*Ændring af skriftstørrelse*/
-h6 {
+h2, h3 {
     font-size: 1.125;
 }
 /*Placer link længere inde på siden, i række med de andre elementer*/

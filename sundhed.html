@@ -32,8 +32,8 @@
         
         <!--Picture tag med webp og fallback til png-->
                         <picture>
-                            <source type="image/webp" src="img/webp/logo.webp">
-                            <source type="image/png" src="img/png/logo.png">
+                            <source type="image/webp" srcset="img/webp/logo.webp">
+                            <source type="image/png" srcset="img/png/logo.png">
         
                             <img class="logo" src="img/png/logo.png" alt="logo">
                         </picture>
@@ -48,7 +48,7 @@
                             <nav class="dropdropdown">
                                 <nav class="dropcontent">
         <!--Andet lag dropdown med UTF-8 pil ikon-->
-                                <a href="#">Alle produkter <span class="flyt">&#9655</span></a>
+                                <a href="#">Alle produkter <span class="flyt">&#9655;</span></a>
                                 <nav class="dropdropdropdown">
         <!--Tredje lag dropdown-->
                                     <a href="produkter.html">De klassiske øl</a>
@@ -68,7 +68,7 @@
                             <nav class="dropdropdown">
                                 <nav class="dropcontent">
         <!--Resten af navigationsbaren fortsætter som forklaret ovenfor-->
-                                    <a href="#">Det gode valg <span class="far">&#9655</span></a>
+                                    <a href="#">Det gode valg <span class="far">&#9655;</span></a>
                                     <nav class="dropdropdropdown">
                                         <a href="sundhed.html">Info om sundhed</a>
                                         <a href="#">Bæredygtighed</a>
@@ -76,7 +76,7 @@
                                     </nav>
                                 </nav>
                                     <nav class="dropcontent">
-                                    <a href="#">Smagens udvikling <span>&#9655</span></a>
+                                    <a href="#">Smagens udvikling <span>&#9655;</span></a>
                                     <nav class="dropdropdropdown">
                                         <a href="#">Øl vs. sodavand</a>
                                         <a href="#">Gæt smagen</a>
@@ -113,7 +113,7 @@
                             <a href="#">Om ZeroBuzz Brew</a>
                             <nav class="dropdropdown">
                                 <nav class="dropcontent">
-                                <a href="#">Om os <span class="further">&#9655</span></a>
+                                <a href="#">Om os <span class="further">&#9655;</span></a>
                                 <nav class="dropdropdropdown">
                                     <a href="#">Vores historie</a>
                                     <a href="vaerdier.html">Vores værdier</a>
@@ -145,7 +145,7 @@
                         <nav class="deskdrop-content">
                             <nav class="deskdropdrop">
         <!--Dropdown med UTF-8 pil ikon til andet lag dropdown-->
-                                <button class="dropdropbtn">Alle produkter <span>&#9655</span></button>
+                                <button class="dropdropbtn">Alle produkter <span>&#9655;</span></button>
         <!--Andet lag dropdown-->
                                 <nav class="deskdropdrop-content">
                                     <a href="produkter.html">De klassiske øl</a>
@@ -166,7 +166,7 @@
                         <button class="dropbtn">Information</button>
                         <nav class="deskdrop-content">
                             <nav class="deskdropdrop">
-                                <button class="dropdropbtn">Det gode valg <span class="far">&#9655</span></button>
+                                <button class="dropdropbtn">Det gode valg <span class="far">&#9655;</span></button>
                                 <nav class="deskdropdrop-content">
                                     <a href="sundhed.html">Info om sundhed</a>
                                     <a href="#">Bæredygtighed</a>
@@ -174,7 +174,7 @@
                                 </nav>
                             </nav>
                             <nav class="deskdropdrop">
-                                <button class="dropdropbtn">Smagens udvikling <span>&#9655</span></button>
+                                <button class="dropdropbtn">Smagens udvikling <span>&#9655;</span></button>
                                 <nav class="deskdropdrop-content">
                                     <a href="#">Øl vs. sodavand</a>
                                     <a href="#">Gæt smagen</a>
@@ -208,7 +208,7 @@
                         <button class="dropbtn">Om ZeroBuzz Brew</button>
                         <nav class="deskdrop-content">
                             <nav class="deskdropdrop">
-                                <button class="dropdropbtn">Om os <span class="further">&#9655</span></button>
+                                <button class="dropdropbtn">Om os <span class="further">&#9655;</span></button>
                                 <nav class="deskdropdrop-content">
                                     <a href="#">Vores historie</a>
                                     <a href="vaerdier.html">Vores værdier</a>
@@ -230,7 +230,6 @@
                         </nav>
                     </nav>
                     </nav>
-                </nav>
         </header>
 
     <main>
@@ -238,11 +237,11 @@
         <h1>Info om sundhed</h1>
 
 <!--Opsætning af indholdet med block på mobil og flex på desktop-->
-<section class="flex">
-    <section class="flex1">
+<div class="flex">
+    <div class="flex1">
         <article class="tekst">
 <!--h4 da der er fire af dem, og det derfor ville være for mange h2'er-->
-        <h4>Hvordan er alkoholfri øl sundt?</h4>
+        <h2>Hvordan er alkoholfri øl sundt?</h2>
         <p>Selvom vi hos ZeroBuzz Brew altid har set alkoholfri øl som sundere end almindelig øl, på 
             mange forskellige måder, er vi blevet opmærksomme på, at det ikke er alle der har denne 
             opfattelse. Vi vil derfor prøve, at fortælle dig om de mest væsentlige måder hvor på 
@@ -258,7 +257,7 @@
             Afhængigt af hvilke kilder du forholder dig til, kan du også finde alle mulige slags 
             helbredsmæssige fordele ved alle eller specifikke alkoholfrie øl. </p>
 
-        <h4>Hvordan er vores alkoholfrie øl sunde?</h4>
+        <h2>Hvordan er vores alkoholfrie øl sunde?</h2>
         <p>Vi har selvfølgelig set på hvordan andre alkoholfrie øl er sunde, og hvad der bliver 
             forventet af kunder fra dem. For os er det meget vigtigt at kunne vælge en sundere hverdag, 
             og at folk der ønsker en sundere livsstil, trygt kan vælge vores produkter. Vi arbejder 
@@ -267,12 +266,9 @@
             Vi er i konstant udvikling, og prøver for hver dag at gøre vores produkter sundere og bedre, 
             så de lever op til alle de krav du end måtte have. </p>
         
-        <h4>Om vores øl</h4>
-        <p>Ved en <a class="link" 
-            href="https://www.google.com/search?q=alkoholfri+%C3%B8l+kalorier&oq=alkoholfr&gs_lcrp=EgZja
-            HJvbWUqCAgBEEUYJxg7MgYIABBFGDkyCAgBEEUYJxg7MgYIAhBFGDsyBggDEEUYOzIHCAQQLhiABDIGCAUQRRg8MgYIB
-            hBFGDwyBggHEEUYPNIBCDE3MjlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" target="_blank">
-            Google søgning</a> <!--Eksternt link til Google, åbnes i ny fane-->
+        <h2>Om vores øl</h2>
+        <p>Ved en <a class="link" href="https://www.google.com/search?q=alkoholfri+%C3%B8l+kalorier&oq=alkoholfr&gs_lcrp=EgZjaHJvbWUqCAgBEEUYJxg7MgYIABBFGDkyCAgBEEUYJxg7MgYIAhBFGDsyBggDEEUYOzIHCAQQLhiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDE3MjlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" target="_blank">Google søgning</a> 
+            <!--Eksternt link til Google, åbnes i ny fane-->
 
             vil du se at en alkoholfri øl indeholder ca. 37 kalorier, vi har i 
             vores øl fået det ned på blot 21 kalorier, og eksperimenterer stadig med at bringe det 
@@ -282,13 +278,13 @@
             er det sunder alternativ du har valgt. Vi ønsker kun at udvikle smage der henvender sig til 
             den sunde livsstil, i hvert fald for nu.  </p>
         </article>
-    </section>
+    </div>
 
 <!--Tekst boks med billede i-->
-<section class="flex2">
+<div class="flex2">
         <aside class="boks">
             <section class="overskrift">
-            <h4>Facts</h4>
+            <h3>Facts</h3>
             <hr> <!--Linje under overksrift-->
             
         </section>
@@ -303,14 +299,14 @@
 
 <!--Picture tag med webp og fallback til jpg-->
             <picture>
-                <source type="image/webp" src="img/webp/sundhed.webp">
-                <source type="imgae/jpg" src="img/jpg/sundhed.jpg">
+                <source type="image/webp" srcset="img/webp/sundhed.webp">
+                <source type="imgae/jpg" srcset="img/jpg/sundhed.jpg">
 
                 <img src="img/jpg/sundhed.jpg" alt="sundhed">
             </picture>
         </aside>
-    </section>
-    </section>
+    </div>
+</div>
 
     </main>
 
@@ -322,13 +318,13 @@
         <!--Footer opstilling til mobil--> 
                 <section class="mobil">
         <!--Overskrift-->
-                <p><b>ZeroBuzzBrew</b></p>
+                <h4><b>ZeroBuzzBrew</b></h4>
         <!--De tre ikoner som skal være links, men da sidere ikke eksisterer sker der ikke noget ved klik-->
                 <figure class="ikoner">
                     <a href="#" class="ikoner">
                         <picture>
-                            <source type="image/webp" src="img/webp/facebook.webp">
-                            <source type="image/png" src="img/png/facebook.png">
+                            <source type="image/webp" srcset="img/webp/facebook.webp">
+                            <source type="image/png" srcset="img/png/facebook.png">
 
                             <img src="img/png/facebook.png" alt="facebook">
                         </picture>
@@ -336,8 +332,8 @@
 
                     <a href="#" class="ikoner">
                         <picture>
-                            <source type="image/webp" src="img/webp/instagram.webp">
-                            <source type="image/png" src="img/png/instagram.png">
+                            <source type="image/webp" srcset="img/webp/instagram.webp">
+                            <source type="image/png" srcset="img/png/instagram.png">
 
                             <img src="img/png/instagram.png" alt="facebook">
                         </picture>
@@ -345,8 +341,8 @@
 
                     <a href="#" class="ikoner">
                         <picture>
-                            <source type="image/webp" src="img/webp/twitter.webp">
-                            <source type="image/png" src="img/png/twitter.png">
+                            <source type="image/webp" srcset="img/webp/twitter.webp">
+                            <source type="image/png" srcset="img/png/twitter.png">
 
                             <img src="img/png/twitter.png" alt="facebook">
                         </picture>
@@ -355,30 +351,30 @@
 
         <!--Alle shortcuts-->
                 <a href="produkter.html">Se produkter</a>
-                <a href="##">Kontakt</a>
-                <a href="##">FAQ</a>
-                <a href="##">Støt os</a>
+                <a href="#">Kontakt</a>
+                <a href="#">FAQ</a>
+                <a href="#">Støt os</a>
                 <a href="anmeldelser.html">Anmeldelser</a>
-                <a href="##">Om os</a>
+                <a href="#">Om os</a>
                 <a href="vaerdier.html">Vores værdier</a>
             </section>
         
         <!--Footer opstilling til desktop-->
-            <section class="desktop">
+            <div class="desktop">
         <!--Venstre side i flex-->
-                <section class="left">
-                    <a href="##">Kontakt</a>
-                    <a href="##">FAQ</a>
-                    <a href="##">Støt os</a>
-                </section>
+                <div class="left">
+                    <a href="#">Kontakt</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Støt os</a>
+                </div>
         <!--Midten af flex-->
                 <section>
-                    <p><b>ZeroBuzzBrew</b></p>
+                    <h4><b>ZeroBuzzBrew</b></h4>
                 <figure class="ikoner">
                     <a href="#" class="ikoner">
                         <picture>
-                            <source type="image/webp" src="img/webp/facebook.webp">
-                            <source type="image/png" src="img/png/facebook.png">
+                            <source type="image/webp" srcset="img/webp/facebook.webp">
+                            <source type="image/png" srcset="img/png/facebook.png">
 
                             <img src="img/png/facebook.png" alt="facebook">
                         </picture>
@@ -386,8 +382,8 @@
 
                     <a href="#" class="ikoner">
                         <picture>
-                            <source type="image/webp" src="img/webp/instagram.webp">
-                            <source type="image/png" src="img/png/instagram.png">
+                            <source type="image/webp" srcset="img/webp/instagram.webp">
+                            <source type="image/png" srcset="img/png/instagram.png">
 
                             <img src="img/png/instagram.png" alt="facebook">
                         </picture>
@@ -395,26 +391,26 @@
 
                     <a href="#" class="ikoner">
                         <picture>
-                            <source type="image/webp" src="img/webp/twitter.webp">
-                            <source type="image/png" src="img/png/twitter.png">
+                            <source type="image/webp" srcset="img/webp/twitter.webp">
+                            <source type="image/png" srcset="img/png/twitter.png">
 
                             <img src="img/png/twitter.png" alt="facebook">
                         </picture>
                     </a>
                 </figure>
                     <a href="produkter.html">Se produkter</a>
-                    <section class="info">
+                    <div class="info">
                     <p>+45 56 67 89 56</p>
                     <p>zerobuzzbrew@gmail.com</p>
-                </section>
+                    </div>
         <!--Højre side af flex-->
                 </section>
-                <section class="right">
+                <div class="right">
                     <a href="anmeldelser.html">Anmeldelser</a>
-                    <a href="##">Om os</a>
+                    <a href="#">Om os</a>
                     <a href="vaerdier.html">Vores værdier</a>
-                </section>
-            </section>
+                </div>
+            </div>
             </footer>
     
 </body>

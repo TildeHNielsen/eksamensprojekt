@@ -277,6 +277,15 @@ p {
     font-weight: 400;
     font-style: normal; 
 }
+/*Styling af overksift i footer*/
+h4 {
+    font-size: 1.0625rem; /*Størrelser valgt ved Mockups*/
+    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: -0.5rem;
+    padding-top: 2rem;
+}
 /*Styling af øverste tekst*/
 .zero {
     color: white;
@@ -337,6 +346,11 @@ hinanden ved denne størrelse*/
         text-align: center;
         padding-top: 2rem;
         padding-bottom: 2rem;
+    }
+    /*Ny skriftstørrelse*/
+    h4 {
+        font-size: 1.125; /*Størrelser valgt ved Mockups*/
+        padding-top: 0rem;
     }
 /*Ændring i styling af øverste tekst*/
 .zero {

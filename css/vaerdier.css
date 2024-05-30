@@ -26,7 +26,7 @@ h1 {
     font-size: 2.5rem; /*Størrelser valgt ved Mockups*/
     margin-top: 0rem;
 }
-h4 {
+h2, h3 {
     font-size: 1.5rem; /*Størrelser valgt ved Mockups*/
     padding-left: 2rem;
     padding-right: 2rem;
@@ -35,13 +35,6 @@ h4 {
     font-family: "DM Serif Text", serif; /*Taget fra Google fonts*/
     font-weight: 400;
     font-style: normal;
-}
-h6 {
-    font-size: 1.0625rem;
-    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: -0.5rem;
 }
 /*Placering af overskriften*/
 .overskrift {
@@ -103,12 +96,8 @@ img {
         padding-left: 2rem;
     }
 /*Ny skriftstørrelse*/
-    h4 {
+    h2, h3 {
         font-size: 1.875rem;
-    }
-/*Ny skriftstørrelse*/
-    h6 {
-        font-size: 1.125;
     }
 /*Ændringer af placering og størrelse af stregen*/
     hr {

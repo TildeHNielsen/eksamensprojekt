@@ -12,22 +12,24 @@ p {
     font-size: 1.0625rem; /*Størrelser valgt ved Mockups*/
     line-height: 120%; /*Ændringer af linje højden*/
 }
-h4 {
+h1, h3 {
     text-align: center;
     padding-top: 1rem;
     font-size: 1.875rem; /*Størrelser valgt ved Mockups*/
     font-family: "DM Serif Display", serif; /*Taget fra Google fonts*/
     font-weight: 400;
     font-style: normal; 
+    padding-bottom: 1rem;
 }
-h5 {
+h2 {
     font-size: 1.5rem; /*Størrelser valgt ved Mockups*/
     margin-bottom: -0.2rem;
     font-family: "DM Serif Text", serif; /*Taget fra Google fonts*/
     font-weight: 400;
     font-style: normal;
+    padding-top: 1rem;
 }
-h6 {
+h4 {
     font-size: 1.0625rem;
     font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
     font-weight: 400;
@@ -63,6 +65,10 @@ hr {
     padding-bottom: 3rem;
     margin-left: 1rem;
     margin-right: 1rem;
+}
+.knap {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 /*Styling af links*/
 .link {
@@ -171,15 +177,16 @@ hr {
 /*Justering af billeder*/
 .billede {
     box-shadow: 0px 0px 10px black;
-    width: 90%; /*Lidt mindre billede*/
+    width: 100%;
 }
 .sundhed {
-    width: 80%;
+    width: 92%;
 }
 /*Events i flex på desktop, men ikke på mobil*/
 .flexing {
     margin-left: 1rem;
     margin-right: 1rem;
+    justify-content: center;
 }
 /*Tekst på billede, og placeret i midten*/
 .centertekst {
@@ -259,17 +266,18 @@ breakpoints, men jeg har valgt at se bort fra det*/
         font-size: 1.125rem;
     }
 /*Ændring af skriftstørrelse og placering*/
-    h4 {
+    h1,h3 {
         font-size: 2.5rem; /*Størrelser valgt ved Mockups*/
         text-align: left;
         padding-top: 4rem;
         margin-left: 5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
-    h5 {
+    h2 {
         font-size: 1.875rem; /*Størrelser valgt ved Mockups*/
+        padding-top: 1rem;
     }
-    h6 {
+    h4 {
         font-size: 1.125;
     }
 /*Justeringer til linjen under overskrifter*/
@@ -308,6 +316,7 @@ breakpoints, men jeg har valgt at se bort fra det*/
 /*Flyt knappen lidt*/
     .knap {
         margin-top: 1rem;
+        margin-bottom: -1rem;
     }
 /*Justeringer til links*/
     .link2 {
@@ -335,7 +344,7 @@ breakpoints, men jeg har valgt at se bort fra det*/
 /*Events ændres til flex*/
     .flexing {
         display: flex;
-        gap: 1rem;
+        gap: 5rem;
         margin-left: 2rem;
         margin-right: 2rem;
         margin-top: -1.1rem;

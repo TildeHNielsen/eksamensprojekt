@@ -236,28 +236,28 @@
         <h1>Alle produkter</h1>
 <!--En sektion af produkter med tilhørende-->
         <section class="klassiske">
-            <section class="flex"> <!--Underoverskrift og sorter knap skal være i flex-->
-            <section>
-            <h4>De klassiske øl</h4> <!--Underoverskift-->
-            </section>
+            <div class="flex"> <!--Underoverskrift og sorter knap skal være i flex-->
+            <div>
+            <h2>De klassiske øl</h2> <!--Underoverskift-->
+            </div>
 
 <!--Sorter knap laves visuelt, men jeg har ikke programmeret den til at fungere-->
-            <section class="sorter">
+            <div class="sorter">
                 <form action="#"> <!--Knappen har ikke en programmeret funktion endnu-->
-                    Sorter efter: <br>
-<!--Sorterings muligheder-->
-                    <select name="sorter" id="sorter">
+                    <label for="select">Sorter efter:</label><br>
+                    <!--Sorterings muligheder-->
+                    <select name="select" id="select">
                         <option value="nyeste">Mest solgt</option>
                         <option value="1-5">A-Z</option>
                         <option value="5-1">Nyeste</option>
                     </select>
                 </form>
-            </section>
-        </section>
+            </div>
+        </div>
 
 <!--Kasse med produkt billeder og infor-->
             <article class="produktboks">
-                <section class="produkter1"> <!--Skal have grå baggrund-->
+                <div class="produkter1"> <!--Skal have grå baggrund-->
 
                     <picture>
                         <source type="image/webp" srcset="img/webp/can2.webp">
@@ -265,10 +265,10 @@
             
                         <img class="can" src="img/png/can2.png" alt="can">
                     </picture>
-
-                <p class="stor"><strong>Den klassiske 0,0%</strong></p> <!--Tyk skrift-->
+                
+                <h3 class="stor"><strong>Den klassiske 0,0%</strong></h3> <!--Tyk skrift-->
                 <p class="lille">Øltype: Klassisk øl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="#">Læs mere</a></p>
-                </section>
+                </div>
 
                 <section class="produkter2"> <!--Skal have hvid baggrund-->
 
@@ -278,44 +278,57 @@
             
                         <img class="can" src="img/png/can1.png" alt="can">
                     </picture>
-                    
-                    <p class="stor"><strong>Classic 0,0%</strong></p>
+                
+                    <h3 class="stor"><strong>Classic 0,0%</strong></h3>
                     <p class="lille">Øltype: Classic øl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="#">Læs mere</a></p>
                     </section>
-<section class="hide"> <!--Tomme kasser skal kunne skjules på mobil-->
-                    <section class="produkter1">
-                        <img class="blank" src="img/png/can1.png" alt="blank">
+<div class="hide"> <!--Tomme kasser skal kunne skjules på mobil-->
+                    <div class="produkter1">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/can1.webp">
+                            <source type="image/png" srcset="img/png/can1.png">
+                
+                            <img class="blank" src="img/png/can1.png" alt="blank">
+                        </picture>
                         <p>Flere produkter på vej...</p>
-                    </section>
-
-                    <section class="produkter2">
-                        <img class="blank" src="img/png/can1.png" alt="blank">
+                    </div>
+                
+                    <div class="produkter2">
+                        <picture>
+                            <source class="can" type="image/webp" srcset="img/webp/can1.webp">
+                            <source type="image/png" srcset="img/png/can1.png">
+                
+                            <img class="blank" src="img/png/can1.png" alt="blank">
+                        </picture>
                         <p>Flere produkter på vej...</p>
-                    </section>
-                </section>
+                    
+                    </div>
+                </div>
+            </article>
         </section>
         <p class="none"> Flere produkter på vej...</p> <!--Den tekst skal kunne skjules på desktop-->
 
 <!--Tre kasser mere nedad, alle lavet på samme måde-->
         <section class="klassiske">
-            <section class="flex">
-                <section>
-                <h4>Nyeste produkter</h4>
-                </section>
+            <div class="flex">
+                <div>
+                <h2>Nyeste produkter</h2>
+                </div>
     
-                <section class="sorter">
-                    <form action="#">
-                        Sorter efter:<br>
-                        <select name="sorter" id="sorter">
+                <div class="sorter">
+                    <form action="#"> 
+                        <label for="select">Sorter efter:</label><br>
+
+                        <select name="select" id="select">
                             <option value="nyeste">Mest solgt</option>
                             <option value="1-5">A-Z</option>
                             <option value="5-1">Nyeste</option>
                         </select>
                     </form>
-                </section>
-            </section>
+                </div>
+            </div>
             <article class="produktboks">
-                <section class="produkter1">
+                <div class="produkter1">
 
                     <picture>
                         <source type="image/webp" srcset="img/webp/can4.webp">
@@ -324,9 +337,9 @@
                         <img class="can" src="img/png/can4.png" alt="can">
                     </picture>
 
-                <p class="stor"><strong>Saison 0,0%</strong></p>
-                <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
-                </section>
+                <h3 class="stor"><strong>Saison 0,0%</strong></h3>
+                <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="#">Læs mere</a></p>
+                </div>
 
                 <section class="produkter2">
 
@@ -337,8 +350,8 @@
                         <img class="can" src="img/png/can6.png" alt="can">
                     </picture>
 
-                    <p class="stor"><strong>Blåbær og brombær 0,0%</strong></p>
-                    <p class="lille">Øltype: Bær smag <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
+                    <h3 class="stor"><strong>Blåbær & brombær 0,0%</strong></h3>
+                    <p class="lille">Øltype: Bær smag <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="#">Læs mere</a></p>
                     </section>
 
                     <section class="produkter1">
@@ -350,8 +363,8 @@
                             <img class="can" src="img/png/can3.png" alt="can">
                         </picture>
 
-                        <p class="stor"><strong>Sour 0,0%</strong></p>
-                        <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
+                        <h3 class="stor"><strong>Sour 0,0%</strong></h3>
+                        <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="#">Læs mere</a></p>
                         </section>
 
                         <section class="produkter2">
@@ -363,30 +376,33 @@
                                 <img class="can" src="img/png/can5.png" alt="can">
                             </picture>
 
-                            <p class="stor"><strong>Lime og cherimoya 0,0%</strong></p>
-                            <p class="lille">Øltype: Med smag <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
+                            <h3 class="stor"><strong>Lime & cherimoya 0,0%</strong></h3>
+                            <p class="lille">Øltype: Med smag <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="#">Læs mere</a></p>
                             </section>
+                        </article>
                         </section>
+                    
 
                             <section class="klassiske">
-                                <section class="flex">
-                                    <section>
-                                    <h4>Specialøl</h4>
-                                    </section>
+                                <div class="flex">
+                                    <div>
+                                    <h2>Specialøl</h2>
+                                    </div>
                         
-                                    <section class="sorter">
-                                        <form action="#">
-                                            Sorter efter: <br>
-                                            <select name="sorter" id="sorter">
+                                    <div class="sorter">
+                                        <form action="#"> 
+                                            <label for="select">Sorter efter:</label><br>
+                    
+                                            <select name="select" id="select">
                                                 <option value="nyeste">Mest solgt</option>
                                                 <option value="1-5">A-Z</option>
                                                 <option value="5-1">Nyeste</option>
                                             </select>
                                         </form>
-                                    </section>
-                                </section>
+                                    </div>
+                                </div>
                                 <article class="produktboks">
-                                    <section class="produkter1">
+                                    <div class="produkter1">
 
                                         <picture>
                                             <source type="image/webp" srcset="img/webp/can3.webp">
@@ -395,9 +411,9 @@
                                             <img class="can" src="img/png/can3.png" alt="can">
                                         </picture>
 
-                                    <p class="stor"><strong>Sour 0,0%</strong></p>
-                                    <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
-                                    </section>
+                                    <h3 class="stor"><strong>Sour 0,0%</strong></h3>
+                                    <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="#">Læs mere</a></p>
+                                    </div>
                     
                                     <section class="produkter2">
 
@@ -408,42 +424,54 @@
                                             <img class="can" src="img/png/can4.png" alt="can">
                                         </picture>
 
-                                        <p class="stor"><strong>Saison 0,0%</strong></p>
-                                        <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
+                                        <h3 class="stor"><strong>Saison 0,0%</strong></h3>
+                                        <p class="lille">Øltype: Specialøl <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="#">Læs mere</a></p>
                                         </section>
-                                        <section class="hide">
-                                            <section class="produkter1">
-                                                <img class="blank" src="img/png/can1.png" alt="blank">
+                                        <div class="hide">
+                                            <div class="produkter1">
+                                                <picture>
+                                                    <source type="image/webp" srcset="img/webp/can1.webp">
+                                                    <source type="image/png" srcset="img/png/can1.png">
+                                        
+                                                    <img class="blank" src="img/png/can1.png" alt="blank">
+                                                </picture>
                                                 <p>Flere produkter på vej...</p>
-                                            </section>
+                                            </div>
                         
-                                            <section class="produkter2">
-                                                <img class="blank" src="img/png/can1.png" alt="blank">
+                                            <div class="produkter2">
+                                                <picture>
+                                                    <source type="image/webp" srcset="img/webp/can1.webp">
+                                                    <source type="image/png" srcset="img/png/can1.png">
+                                        
+                                                    <img class="blank" src="img/png/can1.png" alt="blank">
+                                                </picture>
                                                 <p>Flere produkter på vej...</p>
-                                            </section>
-                                        </section>
+                                            </div>
+                                        </div>
+                                    </article>
                             </section>
                             <p class="none"> Flere produkter på vej...</p>
 
                             <section class="klassiske">
-                                <section class="flex">
-                                    <section>
-                                    <h4>Anderledes smage</h4>
-                                    </section>
+                                <div class="flex">
+                                    <div>
+                                    <h2>Anderledes smage</h2>
+                                    </div>
                         
-                                    <section class="sorter">
-                                        <form action="##">
-                                            Sorter efter: <br>
-                                            <select name="sorter" id="sorter">
+                                    <div class="sorter">
+                                        <form action="#"> 
+                                            <label for="select">Sorter efter:</label><br>
+                    
+                                            <select name="select" id="select">
                                                 <option value="nyeste">Mest solgt</option>
                                                 <option value="1-5">A-Z</option>
                                                 <option value="5-1">Nyeste</option>
                                             </select>
                                         </form>
-                                    </section>
-                                </section>
+                                    </div>
+                                </div>
                                 <article class="produktboks">
-                                    <section class="produkter1">
+                                    <div class="produkter1">
 
                                         <picture>
                                             <source type="image/webp" srcset="img/webp/can6.webp">
@@ -452,9 +480,9 @@
                                             <img class="can" src="img/png/can6.png" alt="can">
                                         </picture>
 
-                                    <p class="stor"><strong>Blåbær og brombær 0,0%</strong></p>
-                                    <p class="lille">Øltype: Bær smag <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
-                                    </section>
+                                    <h3 class="stor"><strong>Blåbær & brombær 0,0%</strong></h3>
+                                    <p class="lille">Øltype: Bær smag <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="#">Læs mere</a></p>
+                                    </div>
                     
                                     <section class="produkter2">
 
@@ -465,31 +493,42 @@
                                             <img class="can" src="img/png/can1.png" alt="can">
                                         </picture>
 
-                                        <p class="stor"><strong>Lime og cherimoya 0,0%</strong></p>
-                                        <p class="lille">Øltype: Med smag <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="##">Læs mere</a></p>
+                                        <h3 class="stor"><strong>Lime & cherimoya 0,0%</strong></h3>
+                                        <p class="lille">Øltype: Med smag <br> Kcal: 21 <br> ABV: 0% <br> <a class="link" href="#">Læs mere</a></p>
                                         </section>
-                                        <section class="hide">
-                                            <section class="produkter1">
-                                                <img class="blank" src="img/png/can1.png" alt="blank">
+                                        <div class="hide">
+                                            <div class="produkter1">
+                                                <picture>
+                                                    <source type="image/webp" srcset="img/webp/can1.webp">
+                                                    <source type="image/png" srcset="img/png/can1.png">
+                                        
+                                                    <img class="blank" src="img/png/can1.png" alt="blank">
+                                                </picture>
                                                 <p>Flere produkter på vej...</p>
-                                            </section>
+                                            </div>
                         
-                                            <section class="produkter2">
-                                                <img class="blank" src="img/png/can1.png" alt="blank">
+                                            <div class="produkter2">
+                                                <picture>
+                                                    <source type="image/webp" srcset="img/webp/can1.webp">
+                                                    <source type="image/png" srcset="img/png/can1.png">
+                                        
+                                                    <img class="blank" src="img/png/can1.png" alt="blank">
+                                                </picture>
                                                 <p>Flere produkter på vej...</p>
-                                            </section>
-                                        </section>
+                                            </div>
+                                        </div>
+                                    </article>
                             </section>
                             <p class="none"> Flere produkter på vej...</p>
-        </section>
+                        
 
 <!--Information under kasserne-->
-        <section class="bottompage">
+        <div class="bottompage">
             <button class="knap">Køb her</button> <!--Knap til køb-->
 <!--Link sætninger-->
             <p class="links">Læs om vores ingredienser <a class="link" href="#">her.</a></p>
             <p class="links">Se hvad vores kunder synes <a class="link" href="anmeldelser.html">her.</a></p>
-        </section>
+        </div>
     </main>
 
     
@@ -500,7 +539,7 @@
         <!--Footer opstilling til mobil--> 
                 <section class="mobil">
         <!--Overskrift-->
-                <p><b>ZeroBuzzBrew</b></p>
+                <h4><b>ZeroBuzzBrew</b></h4>
         <!--De tre ikoner som skal være links, men da sidere ikke eksisterer sker der ikke noget ved klik-->
                 <figure class="ikoner">
                     <a href="#" class="ikoner">
@@ -533,25 +572,25 @@
 
         <!--Alle shortcuts-->
                 <a href="produkter.html">Se produkter</a>
-                <a href="##">Kontakt</a>
-                <a href="##">FAQ</a>
-                <a href="##">Støt os</a>
+                <a href="#">Kontakt</a>
+                <a href="#">FAQ</a>
+                <a href="#">Støt os</a>
                 <a href="anmeldelser.html">Anmeldelser</a>
-                <a href="##">Om os</a>
+                <a href="#">Om os</a>
                 <a href="vaerdier.html">Vores værdier</a>
             </section>
         
         <!--Footer opstilling til desktop-->
-            <section class="desktop">
+            <div class="desktop">
         <!--Venstre side i flex-->
-                <section class="left">
-                    <a href="##">Kontakt</a>
-                    <a href="##">FAQ</a>
-                    <a href="##">Støt os</a>
-                </section>
+                <div class="left">
+                    <a href="#">Kontakt</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Støt os</a>
+                </div>
         <!--Midten af flex-->
                 <section>
-                    <p><b>ZeroBuzzBrew</b></p>
+                    <h4><b>ZeroBuzzBrew</b></h4>
                 <figure class="ikoner">
                     <a href="#" class="ikoner">
                         <picture>
@@ -581,18 +620,18 @@
                     </a>
                 </figure>
                     <a href="produkter.html">Se produkter</a>
-                    <section class="info">
+                    <div class="info">
                     <p>+45 56 67 89 56</p>
                     <p>zerobuzzbrew@gmail.com</p>
-                </section>
+                    </div>
         <!--Højre side af flex-->
                 </section>
-                <section class="right">
+                <div class="right">
                     <a href="anmeldelser.html">Anmeldelser</a>
-                    <a href="##">Om os</a>
+                    <a href="#">Om os</a>
                     <a href="vaerdier.html">Vores værdier</a>
-                </section>
-            </section>
+                </div>
+            </div>
             </footer>
 </body>
 </html>
