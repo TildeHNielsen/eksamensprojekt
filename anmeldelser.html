@@ -21,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+<!--Titlen på fanen-->
     <title>Anmeldelser</title>
 
 </head>
@@ -240,15 +241,16 @@
 brugt 5 helt fyldte i stedet for-->
         <p class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
 
-<!--'Skriv en anmeldese' og sorter boks er sat i samme <section> for at kunne bruge flex-->
+<!--'Skriv en anmeldese' og sorter boks er sat i samme <div> for at kunne bruge flex-->
     <div class="flex">
         <p class="link">Skriv en anmeldelse</p>
-
+<!--Mulighed for at ændre sorter rækkefølgen, jeg har dog ikke programmeret den til at gøre noget-->
         <div class="sorter">
                 <form action="#"> 
-                    <label for="select"><p>Sorter efter:</p></label><br>
+                    <label for="select">Sorter efter:</label><br>
 
                     <select name="select" id="select">
+            <!--Sorterings muligheder-->
                         <option value="nyeste">Nyeste</option>
                         <option value="1-5">1-5 stjerner</option>
                         <option value="5-1">5-1 stjerner</option>
@@ -258,7 +260,7 @@ brugt 5 helt fyldte i stedet for-->
         </div>
     </div>
 
-<!--Opsætning af en anmeldelse, sat i flere <section>s for at kunne lave om på opsætningen på desktop-->
+<!--Opsætning af en anmeldelse, sat i flere <div>s og <sections>s for at kunne lave om på opsætningen på desktop-->
     <div class="anmeld"> <!--Hele kassen-->
         <p class="righte">Upload: 27/03/2024</p> <!--Kun upload-->
     <div class="part1"> <!--Stjerner og produkt billede-->
@@ -390,7 +392,6 @@ brugt 5 helt fyldte i stedet for-->
     </section>
 </div>
 </div>
-
     </main>
 
 

@@ -1,5 +1,5 @@
 /*sundhed.css og vaerdier.css ligner meget hinanden, men jeg har valgt at lave to forskellige filer
-for at kunne ændre i dem indivieúelt hvis nødvendigt*/
+for at kunne ændre i dem individuelt hvis nødvendigt*/
 
 
 /*Styling af de forskellige tekster*/
@@ -91,8 +91,6 @@ img {
 footer {
     padding-top: 3rem;
 }
-
-
 
 
 /*Media quieries ved 900px da den anden opstilling først ser ordentlig ud her*/

@@ -20,7 +20,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+<!--Titlen på fanen-->
     <title>ZeroBuzz Brew</title>
+
 </head>
 <body>
     <!--Jeg har lavet to navigationsbarer, da mobil version er gemt i en burger menu, og jeg ikke kunne regne
@@ -240,6 +242,7 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
 
                 <img class="topbillede" src="img/jpg/heroimage_mobil.jpg" alt="heromobil">
             </picture>
+
 <!--Hero image til desktop i picture tag-->
             <picture class="heroimagedesktop">
                 <source type="image/webp" srcset="img/webp/heroimage_desktop.webp">
@@ -248,7 +251,8 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
                 <img class="desktopbillede" src="img/jpg/heroimage_desktop.jpg" alt="herodesktop">
             </picture>
 
-<!---->
+<!--Lighthouse ville have en rækkefølge fra h1-h6, og jeg har derfor været nødt til at tilpasse mine h
+tags så de følger det-->
             <h1>ZeroBuzzBrew</h1>
 
 <!--Linje under overskrift-->
@@ -257,7 +261,7 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
 <!--Første boks med om os informationer-->
     <div class="rcorners">
         <section>
-<!--Underoverskrift til h4-->
+<!--Underoverskrift som h2-->
         <h2>Om os</h2>
         <p>Vi er et mikrobryggeri, som startede op i 2021, hvor vi så en stor stigning i popularitet 
             af alkoholfri øl. Vi vurderede dog, at der manglede et større udvalg, og en smagsforbedring. 
@@ -291,6 +295,7 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
 
 <!--Oversigt over produkter-->
     <article>
+<!--Jeg har her været nødt til at bruge h3, selvom den har samme styling som min h1-->
     <h3 class="move">Vores produkter</h3>
          <hr class="ryk"> <!--Er tildelt en class for at kunne ændre på størrelsen-->
 
@@ -386,12 +391,14 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
                 <hr class="infoline"> <br>
                 <div class="information">
                 <section class="produkter22"> <!--Næsten ens med kasser i scrollmenu, dog med lidt ændringer-->
+                  
                     <picture>
                         <source type="image/webp" srcset="img/webp/sundhed.webp">
                         <source type="image/jpg" srcset="img/jpg/sundhed.jpg">
             
                         <img class="billede sundhed" src="img/jpg/sundhed.jpg" alt="sundhed">
                     </picture>
+                    <!--h4 som underoverskrift til h3-->
                     <h4 class="stor">Info om sundhed</h4>
                     <p class="lille">Få svar på alle dine spørgsmål om
                         alkoholfri øl, kalorier og sundhed, og hvordan
@@ -399,12 +406,14 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
                     </section>
 
                     <section class="produkter11">
+
                         <picture>
                             <source type="image/webp" srcset="img/webp/sport.webp">
                             <source type="image/jpg" srcset="img/jpg/sport.jpg">
                 
                             <img class="billede" src="img/jpg/sport.jpg" alt="sport">
                         </picture>
+
                         <h4 class="stor">Sportslivet</h4>
                         <p class="lille">Hvordan er alkoholfri øl det 
                             perfekte valg for dig der dyrker sport,
@@ -412,12 +421,14 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
                         </section>
 
                         <section class="produkter22">
+
                             <picture>
                                 <source type="image/webp" srcset="img/webp/sodavand.webp">
                                 <source type="image/jpg" srcset="img/jpg/sodavand.jpg">
                     
                                 <img class="billede" src="img/jpg/sodavand.jpg" alt="sodavand">
                             </picture>
+
                             <h4 class="stor">Øl vs. sodavand</h4>
                             <p class="lille">Foretrækker du en sodavand over en 
                                 øl? Læs hvorfor vores øl derfor er 
@@ -425,12 +436,14 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
                             </section>
 
                             <section class="produkter11">
+
                                 <picture>
                                     <source type="image/webp" srcset="img/webp/hjerte.webp">
                                     <source type="image/jpg" srcset="img/jpg/hjerte.jpg">
                         
                                     <img class="billede" src="img/jpg/hjerte.jpg" alt="hjerte">
                                 </picture>
+
                                 <h4 class="stor">Sådan støtter du andre</h4>
                                 <p class="lille">Har du venner der ikke drikker? Føler
                                     du at andre er uforstående over for
@@ -447,10 +460,10 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
         <div class="container"> <!--Individuel event-->
 
         <picture class="mindre">
-            <source type="image/webp" srcset="img/webp/Ølsmagning.webp">
-            <source type="image/jpg" srcset="img/jpg/Ølsmagning.jpg">
+            <source type="image/webp" srcset="img/webp/ølsmagning.webp">
+            <source type="image/jpg" srcset="img/jpg/ølsmagning.jpg">
 
-            <img class="border" src="img/jpg/Ølsmagning.jpg" alt="smagning" width="100%">
+            <img class="border" src="img/jpg/ølsmagning.jpg" alt="smagning">
         </picture>
         <div class="centertekst">Alkoholfri ølsmagning</div> <!--Tekst på billede-->
 
@@ -458,10 +471,10 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
 
 <div class="container">
         <picture class="mindre">
-            <source type="image/webp" srcset="img/webp/Workshop.webp">
-            <source type="image/jpg" srcset="img/jpg/Workshop.jpg">
+            <source type="image/webp" srcset="img/webp/workshop.webp">
+            <source type="image/jpg" srcset="img/jpg/workshop.jpg">
 
-            <img class="border" src="img/jpg/Workshop.jpg" alt="smagning" width="100%">
+            <img class="border" src="img/jpg/workshop.jpg" alt="smagning">
         </picture>
         <div class="centertekst">Alkoholfri Workshop</div>
 

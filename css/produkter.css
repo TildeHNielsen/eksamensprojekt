@@ -28,14 +28,6 @@ h3 {
     margin-bottom: -0.5rem;
     margin-top: 1rem;
 }
-h4 {
-    font-size: 1.0625rem; /*Størrelser valgt ved Mockups*/
-    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: -0.5rem;
-    margin-top: 1rem;
-}
 /*Tyk skrift til produkt navne*/
 strong {
     font-size: 1.2rem; /*Størrelser valgt ved Mockups*/
@@ -45,7 +37,6 @@ strong {
     text-decoration: underline;
     color: #0000ee; /*Standard link farve*/
 }
-
 /*Opstilling af produktboks*/
 /*Alt indhold*/
 .klassiske {
@@ -135,12 +126,8 @@ begynder at se ordentlig ud*/
         padding-left: 2rem;
     }
 /*Ny skriftstørrelse*/
-h3 {
-    font-size: 1.125; /*Størrelser valgt ved Mockups*/
-}
-/*Ny skriftstørrelse*/
-    h4 {
-        font-size: 1.125; /*Størrelser valgt ved Mockups*/
+    h3 {
+        font-size: 1.125rem; /*Størrelser valgt ved Mockups*/
     }
 /*Produktboksen skifter retning fra column til row*/
     .produktboks {

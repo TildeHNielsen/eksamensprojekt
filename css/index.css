@@ -205,6 +205,8 @@ hr {
     border: solid 0.2rem black;
     margin-bottom: 1rem;
     opacity: 80%; /*Lidt mere gennemsigtighed*/
+    width: 100%;
+    height: auto;
 }
 /*De enkelte events*/
 .container {
@@ -278,7 +280,7 @@ breakpoints, men jeg har valgt at se bort fra det*/
         padding-top: 1rem;
     }
     h4 {
-        font-size: 1.125;
+        font-size: 1.125rem;
     }
 /*Justeringer til linjen under overskrifter*/
     hr {

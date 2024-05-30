@@ -4,10 +4,6 @@ p {
     font-weight: 400;
     font-style: normal;
 }
-.sorter p {
-    margin-bottom: -1.2rem;
-    margin-right: 0.5rem;
-}
 h1 {
     text-align: center;
     font-family: "DM Serif Display", serif; /*Taget fra Google fonts*/
@@ -30,6 +26,13 @@ h2, h3 {
 /*Padding under sorter knap*/
 .sorter {
     padding-bottom: 1rem;
+}
+label {
+    margin-bottom: -1.2rem;
+    margin-right: 0.5rem;
+    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
 }
 /*Få <p> til at ligne et understreget link*/
 .link {
@@ -101,7 +104,7 @@ h1 {
 }
 /*Ændring af skriftstørrelse*/
 h2, h3 {
-    font-size: 1.125;
+    font-size: 1.125rem;
 }
 /*Placer link længere inde på siden, i række med de andre elementer*/
 .link {

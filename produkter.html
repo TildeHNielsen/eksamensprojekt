@@ -20,7 +20,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+<!--Titlen på fanen-->
     <title>Produkter</title>
+
 </head>
 <body>
     <header>
@@ -234,6 +236,7 @@
     <main>
 <!--Overskift-->
         <h1>Alle produkter</h1>
+
 <!--En sektion af produkter med tilhørende-->
         <section class="klassiske">
             <div class="flex"> <!--Underoverskrift og sorter knap skal være i flex-->
@@ -246,7 +249,7 @@
                 <form action="#"> <!--Knappen har ikke en programmeret funktion endnu-->
                     <label for="select">Sorter efter:</label><br>
                     <!--Sorterings muligheder-->
-                    <select name="select" id="select">
+                    <select name="select" id="select4">
                         <option value="nyeste">Mest solgt</option>
                         <option value="1-5">A-Z</option>
                         <option value="5-1">Nyeste</option>
@@ -284,12 +287,14 @@
                     </section>
 <div class="hide"> <!--Tomme kasser skal kunne skjules på mobil-->
                     <div class="produkter1">
+
                         <picture>
                             <source type="image/webp" srcset="img/webp/can1.webp">
                             <source type="image/png" srcset="img/png/can1.png">
                 
                             <img class="blank" src="img/png/can1.png" alt="blank">
                         </picture>
+
                         <p>Flere produkter på vej...</p>
                     </div>
                 
@@ -306,7 +311,7 @@
                 </div>
             </article>
         </section>
-        <p class="none"> Flere produkter på vej...</p> <!--Den tekst skal kunne skjules på desktop-->
+        <p class="none"> Flere produkter på vej...</p> <!--Denne tekst skal kunne skjules på desktop-->
 
 <!--Tre kasser mere nedad, alle lavet på samme måde-->
         <section class="klassiske">
@@ -319,7 +324,7 @@
                     <form action="#"> 
                         <label for="select">Sorter efter:</label><br>
 
-                        <select name="select" id="select">
+                        <select name="select" id="select3">
                             <option value="nyeste">Mest solgt</option>
                             <option value="1-5">A-Z</option>
                             <option value="5-1">Nyeste</option>
@@ -462,7 +467,7 @@
                                         <form action="#"> 
                                             <label for="select">Sorter efter:</label><br>
                     
-                                            <select name="select" id="select">
+                                            <select name="select" id="select2">
                                                 <option value="nyeste">Mest solgt</option>
                                                 <option value="1-5">A-Z</option>
                                                 <option value="5-1">Nyeste</option>
@@ -525,6 +530,7 @@
 <!--Information under kasserne-->
         <div class="bottompage">
             <button class="knap">Køb her</button> <!--Knap til køb-->
+            
 <!--Link sætninger-->
             <p class="links">Læs om vores ingredienser <a class="link" href="#">her.</a></p>
             <p class="links">Se hvad vores kunder synes <a class="link" href="anmeldelser.html">her.</a></p>
