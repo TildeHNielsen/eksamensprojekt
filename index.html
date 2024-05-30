@@ -15,6 +15,11 @@
 <!--Link til favicon-->
     <link rel="icon" type="image/x-icon" href="img/webp/logo.webp">
 
+<!--Link til Google fonts: DM Serif Display, DM Serif Text og Istok Web-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <title>ZeroBuzz Brew</title>
 </head>
 <body>
@@ -27,8 +32,8 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
     
     <!--Picture tag med webp og fallback til png-->
                     <picture>
-                        <source type="image/webp" src="img/webp/logo.webp">
-                        <source type="image/png" src="img/png/logo.png">
+                        <source type="image/webp" srcset="img/webp/logo.webp">
+                        <source type="image/png" srcset="img/png/logo.png">
     
                         <img class="logo" src="img/png/logo.png" alt="logo">
                     </picture>
@@ -43,7 +48,7 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
                         <nav class="dropdropdown">
                             <nav class="dropcontent">
     <!--Andet lag dropdown med UTF-8 pil ikon-->
-                            <a href="#">Alle produkter <span class="flyt">&#9655</span></a>
+                            <a href="#">Alle produkter <span class="flyt">&#9655;</span></a>
                             <nav class="dropdropdropdown">
     <!--Tredje lag dropdown-->
                                 <a href="produkter.html">De klassiske øl</a>
@@ -63,7 +68,7 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
                         <nav class="dropdropdown">
                             <nav class="dropcontent">
     <!--Resten af navigationsbaren fortsætter som forklaret ovenfor-->
-                                <a href="#">Det gode valg <span class="far">&#9655</span></a>
+                                <a href="#">Det gode valg <span class="far">&#9655;</span></a>
                                 <nav class="dropdropdropdown">
                                     <a href="sundhed.html">Info om sundhed</a>
                                     <a href="#">Bæredygtighed</a>
@@ -71,7 +76,7 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
                                 </nav>
                             </nav>
                                 <nav class="dropcontent">
-                                <a href="#">Smagens udvikling <span>&#9655</span></a>
+                                <a href="#">Smagens udvikling <span>&#9655;</span></a>
                                 <nav class="dropdropdropdown">
                                     <a href="#">Øl vs. sodavand</a>
                                     <a href="#">Gæt smagen</a>
@@ -108,7 +113,7 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
                         <a href="#">Om ZeroBuzz Brew</a>
                         <nav class="dropdropdown">
                             <nav class="dropcontent">
-                            <a href="#">Om os <span class="further">&#9655</span></a>
+                            <a href="#">Om os <span class="further">&#9655;</span></a>
                             <nav class="dropdropdropdown">
                                 <a href="#">Vores historie</a>
                                 <a href="vaerdier.html">Vores værdier</a>
@@ -140,7 +145,7 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
                     <nav class="deskdrop-content">
                         <nav class="deskdropdrop">
     <!--Dropdown med UTF-8 pil ikon til andet lag dropdown-->
-                            <button class="dropdropbtn">Alle produkter <span>&#9655</span></button>
+                            <button class="dropdropbtn">Alle produkter <span>&#9655;</span></button>
     <!--Andet lag dropdown-->
                             <nav class="deskdropdrop-content">
                                 <a href="produkter.html">De klassiske øl</a>
@@ -161,7 +166,7 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
                     <button class="dropbtn">Information</button>
                     <nav class="deskdrop-content">
                         <nav class="deskdropdrop">
-                            <button class="dropdropbtn">Det gode valg <span class="far">&#9655</span></button>
+                            <button class="dropdropbtn">Det gode valg <span class="far">&#9655;</span></button>
                             <nav class="deskdropdrop-content">
                                 <a href="sundhed.html">Info om sundhed</a>
                                 <a href="#">Bæredygtighed</a>
@@ -169,7 +174,7 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
                             </nav>
                         </nav>
                         <nav class="deskdropdrop">
-                            <button class="dropdropbtn">Smagens udvikling <span>&#9655</span></button>
+                            <button class="dropdropbtn">Smagens udvikling <span>&#9655;</span></button>
                             <nav class="deskdropdrop-content">
                                 <a href="#">Øl vs. sodavand</a>
                                 <a href="#">Gæt smagen</a>
@@ -203,7 +208,7 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
                     <button class="dropbtn">Om ZeroBuzz Brew</button>
                     <nav class="deskdrop-content">
                         <nav class="deskdropdrop">
-                            <button class="dropdropbtn">Om os <span class="further">&#9655</span></button>
+                            <button class="dropdropbtn">Om os <span class="further">&#9655;</span></button>
                             <nav class="deskdropdrop-content">
                                 <a href="#">Vores historie</a>
                                 <a href="vaerdier.html">Vores værdier</a>
@@ -225,46 +230,49 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
                     </nav>
                 </nav>
                 </nav>
-            </nav>
     </header>
     
     <main>
-        <!--Hero image til mobil-->
+<!--Hero image til mobil i picture tag-->
             <picture class="heroimagemobil">
-                <source type="image/webp" src="img/webp/heroimage_mobil.webp">
-                <source type="image/jpg" src="img/jpg/heroimage_mobil.jpg">
+                <source type="image/webp" srcset="img/webp/heroimage_mobil.webp">
+                <source type="image/jpg" srcset="img/jpg/heroimage_mobil.jpg">
 
                 <img class="topbillede" src="img/jpg/heroimage_mobil.jpg" alt="heromobil">
             </picture>
+<!--Hero image til desktop i picture tag-->
             <picture class="heroimagedesktop">
-                <source type="image/webp" src="img/webp/heroimage_desktop.webp">
-                <source type="image/jpg" src="img/jpg/heroimage_desktop.jpg">
+                <source type="image/webp" srcset="img/webp/heroimage_desktop.webp">
+                <source type="image/jpg" srcset="img/jpg/heroimage_desktop.jpg">
 
                 <img class="desktopbillede" src="img/jpg/heroimage_desktop.jpg" alt="herodesktop">
             </picture>
+
 <!--Er egentlig en overskrift for siden, men da der er mange af dem, kan jeg ikke bruge h1, h2 og h3-->
             <h4>ZeroBuzzBrew</h4>
+
 <!--Linje under overskrift-->
             <hr> <br>
 
-<!--Første boks med informationer-->
-    <article class="rcorners">
+<!--Første boks med om os informationer-->
+    <div class="rcorners">
         <section>
+<!--Underoverskrift til h4-->
         <h5>Om os</h5>
         <p>Vi er et mikrobryggeri, som startede op i 2021, hvor vi så en stor stigning i popularitet 
-            af alkoholfrie øl. Vi vurderede dog, at der manglede et større udvalg, og en smagsforbedring. 
-            Vi stræber efter at lave alkoholfrie øl både til øldrikkere der elsker smagen, og alternative 
+            af alkoholfri øl. Vi vurderede dog, at der manglede et større udvalg, og en smagsforbedring. 
+            Vi stræber efter at lave de bedste alkoholfri øl både til øldrikkere der elsker smagen, og alternative 
             smage til dem der ikke gør.</p>
-            <button class="knap">Læs mere</button>
+            <button class="knap">Læs mere</button> <!--Knap har ingen programmeret funktion endnu-->
         </section>
 
         <section>
             <h5>Vores historie</h5>
         <p>Michael og Søren, vores to grundlæggere, har altid været store øl entusiaster. Så da de så 
             udviklingen i alkoholfri øls popularitet, besluttede de sig straks for at springe på. 
-            Med et ønske om, at kunne dele den gode øl smag med alle, uanset smags eller alkoholindtags 
+            Med et ønske om, at kunne dele smagen af øl med alle, uanset smags eller alkoholindtags 
             præferencer. </p>
-            <button class="knap">Læs mere</button>
+            <button class="knap">Læs mere</button> <!--Knap har ingen programmeret funktion endnu-->
         </section>
 
         <section>
@@ -273,229 +281,353 @@ ud hvordan jeg skulle få dem frakoblet på desktop versionen-->
             ‘Sammenhold er vigtigere end alkohol’, samt sælge et sundere alternativ til almindelig øl.
             Derudover har vi stort fokus på god smag, kvalitet, og vores kunders ønske om et billigt 
             produkt, tilsvarende til ølprisen.</p>
-            <button class="knap">Læs mere</button>
-        </section>
-    </article>
+            
+            <form action="vaerdier.html">
+            <button class="knap">Læs mere</button> <!--Føre til værdier ved tryk-->
+        </form>
 
-    <!--Oversigt over produkter-->
-    <section>
-    <h4>Vores produkter</h4>
-            <hr> <br>
-            <a class="link" href="produkter.html">Køb her</a>
-            <article class="scrollmenu">
-                <section class="produkter1">
-                <img class="can" src="img/png/can2.png" alt="can">
-                <p class="stor">Den klassiske 0,0%</p>
+        </section>
+    </div>
+
+<!--Oversigt over produkter-->
+    <article>
+    <h4 class="move">Vores produkter</h4>
+         <hr class="ryk"> <!--Er tildelt en class for at kunne ændre på størrelsen-->
+
+<!--Link til køb-->
+            <a class="link" href="#">Køb her</a>
+<!--Scrollmenu med produkter-->
+            <div class="scrollmenu">
+                <section class="produkter1 produkt"> <!--To classes da den skal have samme styling som de andre, men også noget indviduelt-->
+<!--Indhold i produkt kasse-->
+        <picture>
+            <source type="image/webp" srcset="img/webp/can2.webp">
+            <source type="image/png" srcset="img/png/can2.png">
+
+            <img class="can" src="img/png/can2.png" alt="can">
+        </picture>
+                <h6 class="stor">Den klassiske 0,0%</h6>
                 <p class="lille">Den klassiske øl smag uden alkohol
                     Perfekt til byturen, festen eller en 
                     varm sommeraften</p>
                 </section>
-
+<!--Indhold med grå baggrund-->
                 <section class="produkter2">
-                    <img class="can" src="img/png/can1.png" alt="can">
-                    <p class="stor">Classic 0,0%</p>
+                    <picture>
+                        <source type="image/webp" srcset="img/webp/can1.webp">
+                        <source type="image/png" srcset="img/png/can1.png">
+            
+                        <img class="can" src="img/png/can1.png" alt="can">
+                    </picture>
+                    <h6 class="stor">Classic 0,0%</h6>
                     <p class="lille">En anden klassisk øl smag, præcis
                         som du kender den
                         Perfekt til enhver anledning</p>
                     </section>
-
+<!--Med hvid baggrund-->
                     <section class="produkter1">
-                        <img class="can" src="img/png/can6.png" alt="can">
-                        <p class="stor">Blåbær og brombær 0,0%</p>
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/can6.webp">
+                            <source type="image/png" srcset="img/png/can6.png">
+                
+                            <img class="can" src="img/png/can6.png" alt="can">
+                        </picture>
+                        <h6 class="stor">Blåbær og brombær 0,0%</h6>
                         <p class="lille">En alternativ øl med bær smag
                             Perfekt til dig der ikke bryder dig
                             om øl</p>
                         </section>
-
+<!--osv.-->
                         <section class="produkter2">
-                            <img class="can" src="img/png/can5.png" alt="can">
-                            <p class="stor">Lime og cherimoya 0,0%</p>
+                            <picture>
+                                <source type="image/webp" srcset="img/webp/can5.webp">
+                                <source type="image/png" srcset="img/png/can5.png">
+                    
+                                <img class="can" src="img/png/can5.png" alt="can">
+                            </picture>
+                            <h6 class="stor">Lime og cherimoya 0,0%</h6>
                             <p class="lille">Alternativ til den klassiske øl smag
                                 Perfekt til øl fællesskaber for dig der foretrækker noget andet</p>
                             </section>
 
                             <section class="produkter1">
-                                <img class="can" src="img/png/can3.png" alt="can">
-                                <p class="stor">Sour 0,0%</p>
+                                <picture>
+                                    <source type="image/webp" srcset="img/webp/can3.webp">
+                                    <source type="image/png" srcset="img/png/can3.png">
+                        
+                                    <img class="can" src="img/png/can3.png" alt="can">
+                                </picture>
+                                <h6 class="stor">Sour 0,0%</h6>
                                 <p class="lille">Specialøl uden alkohol
                                     Perfekt til ølsmagning, og til dig 
                                     der ønsker bedre kvalitet </p>
                                 </section>
 
-                                <section class="produkter2">
-                                    <img class="can" src="img/png/can4.png" alt="can">
-                                    <p class="stor">Saison 0,0%</p>
+                                <section class="produkter2 produkt2">
+                                    <picture>
+                                        <source type="image/webp" srcset="img/webp/can4.webp">
+                                        <source type="image/png" srcset="img/png/can4.png">
+                            
+                                        <img class="can" src="img/png/can4.png" alt="can">
+                                    </picture>
+                                    <h6 class="stor">Saison 0,0%</h6>
                                     <p class="lille">Alkoholfri specialøl
                                         Få din yndlings øl type uden alkohol,
                                         og præsenter den omkring dig</p>
                                     </section>
-            </article>
+                                </div>
+<!--Link til produkt siden-->
             <a class="link2" href="produkter.html">Mere information</a>
-    </section>
+        </article>
     <section>
 
-<!--Eksempler paa information-->
+<!--Eksempler på information med links-->
         <h4>Information</h4>
-                <hr> <br>
-                <section class="information">
-                <section class="produkter2">
-                    <img class="billede" src="img/jpg/sundhed.jpg" alt="can">
-                    <p class="stor">Info om sundhed</p>
+                <hr class="infoline"> <br>
+                <div class="information">
+                <section class="produkter22"> <!--Næsten ens med kasser i scrollmenu, dog med lidt ændringer-->
+                    <picture>
+                        <source type="image/webp" srcset="img/webp/sundhed.webp">
+                        <source type="image/jpg" srcset="img/jpg/sundhed.jpg">
+            
+                        <img class="billede sundhed" src="img/jpg/sundhed.jpg" alt="sundhed">
+                    </picture>
+                    <h6 class="stor">Info om sundhed</h6>
                     <p class="lille">Få svar på alle dine spørgsmål om
-                        alkoholfri øl og sundhed, og hvordan
-                        vi har særligt fokus på det. <a href="sundhed.html">Læs her.</a></p>
+                        alkoholfri øl, kalorier og sundhed, og hvordan
+                        vi har særligt fokus på det. <a href="sundhed.html">Læs her.</a></p> <!--Link til Info om sundhed-->
                     </section>
 
-                    <section class="produkter1">
-                        <img class="billede" src="img/jpg/sport.jpg" alt="can">
-                        <p class="stor">Sportslivet</p>
+                    <section class="produkter11">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/sport.webp">
+                            <source type="image/jpg" srcset="img/jpg/sport.jpg">
+                
+                            <img class="billede" src="img/jpg/sport.jpg" alt="sport">
+                        </picture>
+                        <h6 class="stor">Sportslivet</h6>
                         <p class="lille">Hvordan er alkoholfri øl det 
                             perfekte valg for dig der dyrker sport,
-                            og hvilke fordele har det? <a href="##">Læs her.</a></p>
+                            og hvilke fordele har det? <a href="#">Læs her.</a></p>
                         </section>
 
-                        <section class="produkter2">
-                            <img class="billede" src="img/jpg/sodavand.jpg" alt="can">
-                            <p class="stor">Øl vs. sodavand</p>
+                        <section class="produkter22">
+                            <picture>
+                                <source type="image/webp" srcset="img/webp/sodavand.webp">
+                                <source type="image/jpg" srcset="img/jpg/sodavand.jpg">
+                    
+                                <img class="billede" src="img/jpg/sodavand.jpg" alt="sodavand">
+                            </picture>
+                            <h6 class="stor">Øl vs. sodavand</h6>
                             <p class="lille">Foretrækker du en sodavand over en 
                                 øl? Læs hvorfor vores øl derfor er 
-                                perfekte til dig. <a href="##">Læs her.</a></p>
+                                perfekte til dig. <a href="#">Læs her.</a></p>
                             </section>
 
-                            <section class="produkter1">
-                                <img class="billede" src="img/jpg/hjerte.jpg" alt="can">
-                                <p class="stor">Sådan støtter du andre</p>
+                            <section class="produkter11">
+                                <picture>
+                                    <source type="image/webp" srcset="img/webp/hjerte.webp">
+                                    <source type="image/jpg" srcset="img/jpg/hjerte.jpg">
+                        
+                                    <img class="billede" src="img/jpg/hjerte.jpg" alt="hjerte">
+                                </picture>
+                                <h6 class="stor">Sådan støtter du andre</h6>
                                 <p class="lille">Har du venner der ikke drikker? Føler
                                     du at andre er uforstående over for
-                                    deres valg? <a href="##">Læs her.</a></p>
+                                    deres valg? <a href="#">Læs her.</a></p>
                                 </section>
-                            </section>
+                            </div>
                 </section>
+
+<!--Preview af events-->
      <section class="Events">
         <h4>Events</h4>
-        <hr> <br>
-        <section class="flexing">
-        <section class="container">
+        <hr class="eventsline"> <br>
+        <div class="flexing"> <!--Begge events-->
+        <div class="container"> <!--Individuel event-->
+
         <picture class="mindre">
-            <source type="image/webp" src="img/webp/Ølsmagning.webp">
-            <source type="image/jpg" src="img/jpg/Ølsmagning.jpg">
+            <source type="image/webp" srcset="img/webp/Ølsmagning.webp">
+            <source type="image/jpg" srcset="img/jpg/Ølsmagning.jpg">
 
             <img class="border" src="img/jpg/Ølsmagning.jpg" alt="smagning" style="width: 100%;">
-            <section class="centertekst">Alkoholfri ølsmagning</section>
         </picture>
-    </section>
-<section class="container">
+        <div class="centertekst">Alkoholfri ølsmagning</div> <!--Tekst på billede-->
+
+    </div>
+
+<div class="container">
         <picture class="mindre">
-            <source type="image/webp" src="img/webp/Workshop.webp">
-            <source type="image/jpg" src="img/jpg/Workshop.jpg">
+            <source type="image/webp" srcset="img/webp/Workshop.webp">
+            <source type="image/jpg" srcset="img/jpg/Workshop.jpg">
 
             <img class="border" src="img/jpg/Workshop.jpg" alt="smagning" style="width: 100%;">
-            <section class="centertekst">Alkoholfri Workshop</section>
         </picture>
-    </section>
-    </section>
+        <div class="centertekst">Alkoholfri Workshop</div>
+
+    </div>
+</div>
     </section>
 
+<!--Eksempler på anmeldelser på desktop og kun star ranking på mobil-->
     <section>
         <h4>Anmeldelser</h4>
-        <hr> <br>
-<section class="eksempler">
+        <hr class="anline"> <br>
+<!--Preview af udvalgte anmeldelser-->
+<div class="eksempler">
+<!--En anmeldelse-->
         <section class="anmel">
-            <img src="img/png/can2.png" alt="anmeldelse">
-            <p><strong>Den bedste alkoholfrie øl</strong></p>
-            <p>En rigtig god øl til en virkelig <br> 
-                god pris! Jeg har længe ledt <br>
-                efter en alkoholfri øl... <a class="link2" href="anmeldelser.html">Læs mere</a></p>
-        </section>
-        <section class="anmel">
-            <img src="img/png/can4.png" alt="anmeldelse">
-            <p><strong>Super godt produkt!</strong></p>
-            <p>Godt produkt. Jeg har altid <br>
-                været mest til specialøl, hvilket <br>
-                har været et... Læs mere <a class="link2" href="anmeldelser.html">Læs mere</a></p>
-        </section>
-        <section class="anmel">
-            <img src="img/png/can6.png" alt="anmeldelse">
-            <p><strong>Kan klart anbefales</strong></p>
-            <p>Jeg har aldrig været så glad <br>
-                for øl smagen, så plejer at <br>
-                holde mig til... Læs mere <a class="link2" href="anmeldelser.html">Læs mere</a></p>
-        </section>
-    </section>
-    <a class="hide" href="anmeldelser.html">Læs flere her</a>
+            <picture>
+                <source type="image/webp" srcset="img/webp/can2.webp">
+                <source type="image/png" srcset="img/png/can2.png">
+    
+                <img class="meld" src="img/png/can2.png" alt="anmeldelse">
+            </picture>
 
-        <p class="stars">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
-        <a class="link3" href="anmeldelser.html">Læs her</a>
+            <h6><strong>Den bedste alkoholfrie øl</strong></h6>
+            <p>En rigtig god øl til en virkelig 
+                god pris! Jeg har længe ledt 
+                efter en alkoholfri øl... <br><a class="link2" href="anmeldelser.html">Læs mere</a></p>
+        </section>
+
+        <section class="anmel">
+            <picture>
+                <source type="image/webp" srcset="img/webp/can4.webp">
+                <source type="image/png" srcset="img/png/can4.png">
+    
+                <img class="meld" src="img/png/can4.png" alt="anmeldelse">
+            </picture>
+
+            <h6><strong>Super godt produkt!</strong></h6>
+            <p>Godt produkt. Jeg har altid 
+                været mest til specialøl, hvilket 
+                har været et...<br><a class="link2" href="anmeldelser.html">Læs mere</a></p>
+        </section>
+
+        <section class="anmel">
+            <picture>
+                <source type="image/webp" srcset="img/webp/can6.webp">
+                <source type="image/png" srcset="img/png/can6.png">
+    
+                <img class="meld" src="img/png/can6.png" alt="anmeldelse">
+            </picture>
+            <h6><strong>Kan klart anbefales</strong></h6>
+            <p>Jeg har aldrig været så glad 
+                for øl smagen, så plejer at 
+                holde mig til... <br> <a class="link2" href="anmeldelser.html">Læs mere</a></p>
+        </section>
+    </div>
+
+    <a class="hide" href="anmeldelser.html">Læs flere her</a> <!--Link til desktop-->
+
+<!--UTF-8 ikoner af stjerner-->
+        <p class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
+        <a class="link3" href="anmeldelser.html">Læs her</a> <!--Link til mobil-->
     </section>
 
     </main>
 
 
     <footer>
-<!--Jeg har lavet to forskellige opsætninger til footeren, da jeg ikke kunne gennemskue hvordan jeg skulle
-ændre opsætningen på min ønskede måde blot med CSS, der er derfor brugt display:none i stedet-->
+        <!--Jeg har lavet to forskellige opsætninger til footeren, da jeg ikke kunne gennemskue hvordan jeg skulle
+        ændre opsætningen på min ønskede måde blot med CSS, der er derfor brugt display:none i stedet-->
+        
+        <!--Footer opstilling til mobil--> 
+                <section class="mobil">
+        <!--Overskrift-->
+                <h6><b>ZeroBuzzBrew</b></h6>
+        <!--De tre ikoner som skal være links, men da sidere ikke eksisterer sker der ikke noget ved klik-->
+                <figure class="ikoner">
+                    <a href="#" class="ikoner">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/facebook.webp">
+                            <source type="image/png" srcset="img/png/facebook.png">
 
-<!--Footer opstilling til mobil--> 
-        <section class="mobil">
-<!--Overskrift-->
-        <p><b>ZeroBuzzBrew</b></p>
-<!--De tre ikoner som skal være links, men da sidere ikke eksisterer sker der ikke noget ved klik-->
-        <figure class="ikoner">
-            <a href="#" class="ikoner">
-                <img src="img/png/facebook.png" alt="facebook">
-            </a>
-            <a href="#" class="ikoner">
-                <img src="img/png/instagram.png" alt="instagram">
-            </a>
-            <a href="#" class="ikoner">
-                <img src="img/png/twitter.png" alt="twitter">
-            </a>
-        </figure>
-<!--Alle shortcuts-->
-        <a href="produkter.html">Se produkter</a>
-        <a href="##">Kontakt</a>
-        <a href="##">FAQ</a>
-        <a href="##">Støt os</a>
-        <a href="anmeldelser.html">Anmeldelser</a>
-        <a href="##">Om os</a>
-        <a href="vaerdier.html">Vores værdier</a>
-    </section>
+                            <img src="img/png/facebook.png" alt="facebook">
+                        </picture>
+                    </a>
 
-<!--Footer opstilling til desktop-->
-    <section class="desktop">
-<!--Venstre side i flex-->
-        <section class="left">
-            <a href="##">Kontakt</a>
-            <a href="##">FAQ</a>
-            <a href="##">Støt os</a>
-        </section>
-<!--Midten af flex-->
-        <section>
-            <p><b>ZeroBuzzBrew</b></p>
-        <figure class="ikoner">
-            <a href="#" class="ikoner">
-                <img src="img/png/facebook.png" alt="facebook">
-            </a>
-            <a href="#" class="ikoner">
-                <img src="img/png/instagram.png" alt="instagram">
-            </a>
-            <a href="#" class="ikoner">
-                <img src="img/png/twitter.png" alt="twitter">
-            </a>
-        </figure>
-            <a href="produkter.html">Se produkter</a>
-            <section class="info">
-            <p>+45 56 67 89 56</p>
-            <p>zerobuzzbrew@gmail.com</p>
-        </section>
-<!--Højre side af-->
-        </section>
-        <section class="right">
-            <a href="anmeldelser.html">Anmeldelser</a>
-            <a href="##">Om os</a>
-            <a href="vaerdier.html">Vores værdier</a>
-        </section>
-    </section>
-    </footer>
+                    <a href="#" class="ikoner">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/instagram.webp">
+                            <source type="image/png" srcset="img/png/instagram.png">
+
+                            <img src="img/png/instagram.png" alt="facebook">
+                        </picture>
+                    </a>
+
+                    <a href="#" class="ikoner">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/twitter.webp">
+                            <source type="image/png" srcset="img/png/twitter.png">
+
+                            <img src="img/png/twitter.png" alt="facebook">
+                        </picture>
+                    </a>
+                </figure>
+
+        <!--Alle shortcuts-->
+                <a href="produkter.html">Se produkter</a>
+                <a href="#">Kontakt</a>
+                <a href="#">FAQ</a>
+                <a href="#">Støt os</a>
+                <a href="anmeldelser.html">Anmeldelser</a>
+                <a href="#">Om os</a>
+                <a href="vaerdier.html">Vores værdier</a>
+            </section>
+        
+        <!--Footer opstilling til desktop-->
+            <div class="desktop">
+        <!--Venstre side i flex-->
+                <div class="left">
+                    <a href="#">Kontakt</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Støt os</a>
+                </div>
+        <!--Midten af flex-->
+                <section>
+                    <h6><b>ZeroBuzzBrew</b></h6>
+                <figure class="ikoner">
+                    <a href="#" class="ikoner">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/facebook.webp">
+                            <source type="image/png" srcset="img/png/facebook.png">
+
+                            <img src="img/png/facebook.png" alt="facebook">
+                        </picture>
+                    </a>
+
+                    <a href="#" class="ikoner">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/instagram.webp">
+                            <source type="image/png" srcset="img/png/instagram.png">
+
+                            <img src="img/png/instagram.png" alt="facebook">
+                        </picture>
+                    </a>
+
+                    <a href="#" class="ikoner">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/twitter.webp">
+                            <source type="image/png" srcset="img/png/twitter.png">
+
+                            <img src="img/png/twitter.png" alt="facebook">
+                        </picture>
+                    </a>
+                </figure>
+                    <a href="produkter.html">Se produkter</a>
+                    <div class="info">
+                    <p>+45 56 67 89 56</p>
+                    <p>zerobuzzbrew@gmail.com</p>
+                    </div>
+        <!--Højre side af flex-->
+                </section>
+                <div class="right">
+                    <a href="anmeldelser.html">Anmeldelser</a>
+                    <a href="#">Om os</a>
+                    <a href="vaerdier.html">Vores værdier</a>
+                </div>
+            </div>
+            </footer>
 </body>
 </html>

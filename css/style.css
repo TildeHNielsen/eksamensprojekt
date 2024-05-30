@@ -1,5 +1,8 @@
 /*Standard indstillinger*/
-* 
+* {
+    background-color: transparent; /*Alle baggrunde er som standard gennemsigtige*/
+    color: black; /*Alt tekst er som standard sort*/
+}
 
 /*Header*/
 /*Styling af navigationsbaren*/
@@ -43,7 +46,6 @@ ligesom et klik*/
 }
 /*Teksten i dropdown menuen*/
 a {
-    color: black;
     text-decoration: none;
     text-align: left;
     padding: 0.2rem;
@@ -142,7 +144,6 @@ når mobil versionen bliver vist*/
         display: flex;
         padding-right: 2rem;
         overflow: hidden;
-        background-color: transparent; /*Så styling af navigationsbaren kan ses igennem*/
     }
 /*Indholdet kommer frem ved hover*/
     .deskdrop:hover .deskdrop-content {
@@ -174,9 +175,7 @@ når mobil versionen bliver vist*/
     .deskdrop .dropbtn, .dropdropbtn {
         border: none;
         outline: none;
-        color: black;
         font-size: 1.3rem;
-        background-color: transparent; /*Så styling af navigationsbaren kan ses igennem*/
         font-family: sans-serif;
         box-shadow: none;
     }
@@ -195,7 +194,6 @@ når mobil versionen bliver vist*/
 /*Ens styling af teksten i begge lag dropdown menuer*/
     .deskdrop-content a, .deskdropdrop-content a {
         float: none;
-        color: black;
         text-decoration: none;
         display: block;
         text-align: left;
@@ -279,9 +277,19 @@ p {
     font-weight: 400;
     font-style: normal; 
 }
+/*Styling af øverste tekst*/
+.zero {
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
 /*Særlig styling til <p> på mobil*/
 .mobil p {
     padding-top: 1rem;
+}
+/*Tekst farve*/
+.mobil b {
+    color: white;
 }
 /*Placering og styling af de tre ikoner*/
 .ikoner {
@@ -330,6 +338,11 @@ hinanden ved denne størrelse*/
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
+/*Ændring i styling af øverste tekst*/
+.zero {
+    padding-top: 0rem;
+    padding-bottom: 1.5rem;
+}
 /*Styling af link tekster på desktop*/
     .desktop a {
         color: white;
@@ -367,8 +380,16 @@ hinanden ved denne størrelse*/
         font-weight: 400;
         font-style: normal;
     }
-/*Placering af tlf nr. og e-mail*/
+/*Placering og farve af tlf nr. og e-mail*/
     .info {
         padding-top: 3rem;
+    }
+    .info p {
+        color: white;
+    }
+
+/*Tekst farve*/
+    .desktop b {
+        color: white;
     }
 }

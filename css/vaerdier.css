@@ -36,6 +36,13 @@ h4 {
     font-weight: 400;
     font-style: normal;
 }
+h6 {
+    font-size: 1.0625rem;
+    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: -0.5rem;
+}
 /*Placering af overskriften*/
 .overskrift {
     text-align: center;
@@ -98,6 +105,10 @@ img {
 /*Ny skriftstørrelse*/
     h4 {
         font-size: 1.875rem;
+    }
+/*Ny skriftstørrelse*/
+    h6 {
+        font-size: 1.125;
     }
 /*Ændringer af placering og størrelse af stregen*/
     hr {

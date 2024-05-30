@@ -1,28 +1,58 @@
 /*Forskelligt hero image ved mobil og desktop*/
-.topbillede {
+.topbillede { /*Hero image til mobil*/
     width: 100%;
     height: 100%;
     border-bottom: 0.2rem solid black;
 }
-.heroimagedesktop {
-    display: none;
+.heroimagedesktop { 
+    display: none; /*Hero image til desktop skjules*/
 }
-
-/*Styling af overskrifter*/
+/*Justeringer af skriftstørrelse, font og lign.*/
+p {
+    font-size: 1.0625rem; /*Størrelser valgt ved Mockups*/
+    line-height: 120%; /*Ændringer af linje højden*/
+}
 h4 {
     text-align: center;
     padding-top: 1rem;
-    font-size: 1.875rem;
+    font-size: 1.875rem; /*Størrelser valgt ved Mockups*/
+    font-family: "DM Serif Display", serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal; 
 }
-/*Kortere linje under overskrift*/
+h5 {
+    font-size: 1.5rem; /*Størrelser valgt ved Mockups*/
+    margin-bottom: -0.2rem;
+    font-family: "DM Serif Text", serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
+}
+h6 {
+    font-size: 1.0625rem;
+    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+/*Kortere linje under overskrifter*/
 hr {
     height: 0.1rem;
     background-color: #d9d9d9;
     width: 9rem;
-    margin-top: -2rem;
+    margin-top: -2.5rem;
     border: none;
 }
-/*Rundede hjørner paa tekstboks*/
+/*Særlige justeringer ved de enkelte linjer under overskrifter*/
+.ryk {
+    width: 11rem;
+    margin-bottom: 2rem;
+}
+.eventsline {
+    width: 4rem;
+}
+/*Rundede hjørner på tekstboks*/
 .rcorners {
     border-radius: 1rem;
     background-color: #E9F7EF;
@@ -31,135 +61,187 @@ hr {
     border: 0.2rem solid black;
     box-shadow: inset 0px 0px 10px 0px;
     padding-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
-h5 {
-    font-size: 1.5rem;
-    margin-bottom: -0.2rem;
+/*Styling af links*/
+.link {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 0.8rem;
+    text-decoration: underline;
+    color: #0000EE; /*Almindelig link farve*/
+    padding-right: 3rem;
+    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
 }
-p {
-    font-size: 1.0625rem;
-    line-height: 120%;
+.link2 {
+    text-decoration: underline;
+    color: #0000EE; /*Almindelig link farve*/
+    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 1rem;
 }
-
+.link3 {
+    text-decoration: underline;
+    color: #0000EE; /*Almindelig link farve*/
+    display: flex;
+    justify-content: center;
+    margin-top: -1.5rem;
+    padding-bottom: 6rem;
+    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
+}
+/*styling af links*/
+.lille a {
+    text-decoration: underline;
+    color: #0000EE; /*Almindelig link farve*/
+}
 /*scrollmenu til produkterne*/
 .scrollmenu {
     background-color: white;
-    overflow: auto;
+    overflow: auto; /*Danner scrollmenu, har ikke helt det design jeg gerne ville have, men er stadig en tydelig scrollmenu*/
     display: flex;
     border: 0.1rem solid black;
     margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
+/*Skrift i scrollmenu*/
 .scrollmenu p {
-    color: black;
     text-align: center;
     text-decoration: none;
 }
+/*Overskrift i scrollmenu*/
 .stor {
-    font-size: 1.125rem;
+    font-size: 1.125rem; /*Størrelser valgt ved Mockups*/
     font-weight: bold;
+    padding-top: 1rem;
 }
+/*Under tekst i scrollmenu*/
 .lille {
-    font-size: 0.9375rem;
+    font-size: 0.9375rem; /*Størrelser valgt ved Mockups*/
     margin-top: -0.5rem;
 }
 /*Forskellige baggrundsfarver*/
 .produkter1 {
     background-color: white;
     padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .produkter2 {
     background-color: #F6F6F6;
     padding: 2rem;
     box-shadow: inset 0px 0px 5px black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
+/*Justering af første og sidste boks i scrollmenuen, med linje ved yderkanterne*/
+.produkt {
+    margin-left: 1.5rem;
+    border-left: 0.1rem solid black;
+}
+.produkt2 {
+    margin-right: 1.5rem;
+    border-right: 0.1rem solid black; 
+}
+/*Boks med information*/
 .information {
     border: solid 0.1rem black;
     text-align: center;
     display: flex;
     flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
-/*styling af link*/
-.link {
-    display: flex;
-    justify-content: flex-end;
-    padding-bottom: 0.8rem;
-    text-decoration: underline;
-    color: #0000EE;
-    padding-right: 3rem;
+/*Justeringen af de indviduelle kasser, med forskellige baggrundsfarver*/
+.produkter11 {
+    background-color: white;
+    padding: 2rem;
 }
-.link2 {
-    text-decoration: underline;
-    color: #0000EE;
+.produkter22 {
+    background-color: #F6F6F6;
+    padding: 2rem;
+    box-shadow: inset 0px 0px 5px black;
 }
-/*styling af links*/
-.lille a {
-    background-color: transparent;
-    text-decoration: underline;
-    color: #0000EE;
-}
-
+/*Justering af billeder*/
 .billede {
     box-shadow: 0px 0px 10px black;
-    width: 90%;
+    width: 90%; /*Lidt mindre billede*/
 }
-
+.sundhed {
+    width: 80%;
+}
+/*Events i flex på desktop, men ikke på mobil*/
+.flexing {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+/*Tekst på billede, og placeret i midten*/
+.centertekst {
+    position: absolute;
+    top: 50%; /*Placering af tekst i midten*/
+    left: 50%; /*Placering af tekst i midten*/
+    transform: translate(-50%, -50%); /*Placering af tekst i midten*/
+    font-size: 1.875rem; /*Størrelser valgt ved Mockups*/
+    font-weight: bolder; /*Tykkere skrift*/
+    font-family: "DM Serif Display", serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
+}
+/*Kant rundt om events billeder*/
 .border {
     border: solid 0.2rem black;
     margin-bottom: 1rem;
-    opacity: 80%;
+    opacity: 80%; /*Lidt mere gennemsigtighed*/
 }
-.centertekst {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem;
-    font-weight: bolder;
-}
+/*De enkelte events*/
 .container {
     position: relative;
     text-align: center;
-    color: black;
 }
-.stars {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #F1DD29;
-    border: solid 0.1rem black;
-    width: 15rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0rem;
-}
-.link3 {
-    text-decoration: underline;
-    color: #0000EE;
-    display: flex;
-    justify-content: center;
-    margin-top: -1.5rem;
-    padding-bottom: 6rem;
-}
-a {
-    background-color: transparent;
-}
+/*Anmeldelser skjules på mobil*/
 .eksempler {
     display: none;
 }
+/*Justering af størrelsen på billederne ved anmeldelser*/
+.meld {
+    width: 12rem;
+    height: auto;
+}
+/*Star ranking*/
+.stars {
+    text-align: center;
+    font-size: 2.5rem; /*Størrelser valgt ved Mockups*/
+    color: #F1DD29;
+    border: solid 0.2rem black;
+    width: 15rem;
+    margin-left: auto; /*Placering i midten*/
+    margin-right: auto; /*Placering i midten*/
+    margin-top: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 0.5rem;
+}
+/*Skjul tekst på mobil*/
 .hide {
     display: none;
+    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
 }
 
 
+/*Media queries til desktop ved 750px, da den nye opstilling først ser ordentlig ud her, nogle af billederne
+bliver dog skaleret meget op nu, så de får en dårlig opløsning, det ville kunne forhindres med flere 
+breakpoints, men jeg har valgt at se bort fra det*/
+@media screen and (min-width: 750px) {
 
-
-
-/*Media queries til desktop ved 800px*/
-@media screen and (min-width: 800px) {
-
-    /*Vis det andet billede*/
-    .heroimagemobil {
-        display: none;
-    }
+/*Andet hero image vises nu*/
     .heroimagedesktop {
         display: contents;
     }
@@ -168,42 +250,89 @@ a {
         height: 100%;
         border-bottom: 0.7rem solid black;
     }
-
-    /*Ændring af skriftstørrelse og placering*/
-    h4 {
-        font-size: 2.5rem;
-        text-align: left;
-        padding-top: 5rem;
-        margin-left: 5rem;
+/*Det lille billede skjules*/
+    .heroimagemobil {
+        display: none;
     }
+/*Ændring i skriftstørrelse*/  
+    p {
+        font-size: 1.125rem;
+    }
+/*Ændring af skriftstørrelse og placering*/
+    h4 {
+        font-size: 2.5rem; /*Størrelser valgt ved Mockups*/
+        text-align: left;
+        padding-top: 4rem;
+        margin-left: 5rem;
+        margin-bottom: 2rem;
+    }
+    h5 {
+        font-size: 1.875rem; /*Størrelser valgt ved Mockups*/
+    }
+    h6 {
+        font-size: 1.125;
+    }
+/*Justeringer til linjen under overskrifter*/
     hr {
-        height: 0.3rem;
+        height: 0.2rem;
         width: 12rem;
-        margin-top: -3rem;
         float: left;
         margin-left: 7rem;
     }
-    /*Ændring af teksboks*/
+/*Individuelle justeringer til de enkelte linjer*/
+    .ryk {
+        margin-left: 7rem;
+        width: 14rem;
+    }
+    .infoline {
+        margin-left: 6.5rem;
+        width: 10rem;
+    }
+    .eventsline {
+        width: 5rem;
+        margin-left: 6.2rem;
+    }
+    .anline {
+        margin-left: 6.5rem;
+        width: 11rem;
+    }
+/*Ændring af tekstboks*/
     .rcorners {
         display: flex;
         gap: 5rem;
         padding-left: 3rem;
         margin-left: 4rem;
         margin-right: 4rem;
-        margin-top: -1rem;
+        margin-top: -1.1rem;
     }
-    p {
-        font-size: 1.125rem;
+/*Flyt knappen lidt*/
+    .knap {
+        margin-top: 1rem;
     }
-    h5 {
-        font-size: 1.875rem;
+/*Justeringer til links*/
+    .link2 {
+        margin-left: 2rem;
     }
+    .link3 {
+        display: none; /*Dette link skjules*/
+    }
+/*Flyt scrollmenu lidt*/
+    .scrollmenu {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+/*Hover effekt i scrollmenuen*/
+    .can:hover {
+        transform: scale(1.1); /*Gør billedet større ved hover - skulle egentlig ske samtidigt med teksten, men jeg synes det her ser bedre ud*/
+    }
+/*Information boks ændres fra column til row*/
     .information {
         flex-direction: row;
         margin-left: 2rem;
         margin-right: 2rem;
         margin-top: -1.1rem;
     }
+/*Events ændres til flex*/
     .flexing {
         display: flex;
         gap: 1rem;
@@ -211,6 +340,19 @@ a {
         margin-right: 2rem;
         margin-top: -1.1rem;
     }
+/*Ændringer til skriften i midten af billedet*/
+    .centertekst {
+        font-size: 2.5rem; /*Størrelser valgt ved Mockups*/
+        color: transparent; /*Teksten skjules*/
+        -webkit-text-stroke: black 0.2rem; /*Kun omridset vises*/
+        letter-spacing: 0.3rem; /*Længere mellem bogstaverne*/
+    }
+/*Ved hover skjules omrids og teksten vises*/
+    .centertekst:hover {
+        color: black;
+        -webkit-text-stroke: 0rem;
+    }
+/*Anmeldeses eksempler er nu synlige*/
     .eksempler {
         display: flex;
         gap: 2rem;
@@ -220,26 +362,21 @@ a {
         padding-right: 7rem;
         padding-bottom: 3rem;
     }
-    .link3 {
-        display: none;
-    }
+/*Justeringer til star ranking boksen*/
     .stars {
-        background-color: black;
+        background-color: black; /*Ny baggrundsfarve*/
         margin-bottom: 10rem;
+        border: 0.2rem solid grey;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
+/*Anden tekst vises*/
     .hide {
         display: flex;
         justify-content: flex-end;
         padding-bottom: 0.8rem;
         text-decoration: underline;
-        color: #0000EE;
+        color: #0000EE; /*Almindelig link farve*/
         padding-right: 3rem;
-    }
-    .scrollmenu {
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-    .link2 {
-        margin-left: 2rem;
-    }
+    }  
 }

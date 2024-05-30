@@ -19,6 +19,13 @@ h1 {
     font-size: 2.5rem; /*Størrelser valgt ved Mockups*/
     margin-top: 0rem;
 }
+h6 {
+    font-size: 1.0625rem;
+    font-family: "Istok Web", sans-serif; /*Taget fra Google fonts*/
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: -0.5rem;
+}
 /*Padding under sorter knap*/
 .sorter {
     padding-bottom: 1rem;
@@ -69,7 +76,7 @@ h1 {
     text-align: left;
 }
 /*Placering af billederne af dåserne*/
-img {
+picture {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -91,6 +98,10 @@ også stadig ser nogenlunde ordentlig ud*/
 h1 {
     text-align: left;
     padding-left: 2rem;
+}
+/*Ændring af skriftstørrelse*/
+h6 {
+    font-size: 1.125;
 }
 /*Placer link længere inde på siden, i række med de andre elementer*/
 .link {

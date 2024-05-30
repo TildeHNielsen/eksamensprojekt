@@ -27,7 +27,6 @@ strong {
 .link {
     text-decoration: underline;
     color: #0000ee; /*Standard link farve*/
-    background-color: transparent; /*Ingen baggrund*/
 }
 
 /*Opstilling af produktboks*/
@@ -144,9 +143,10 @@ begynder at se ordentlig ud*/
         float: right;
         top: 0;
         left: 0;
-        -ms-transform: 0; /*Ingen placering af knap*/
-        transform: 0; /*Ingen placering af knap*/
+        -ms-transform: none; /*Ingen placering af knap*/
+        transform: none; /*Ingen placering af knap*/
         margin-top: 3rem;
+        margin-right: 3.5rem;
     }
 /*'Flere proukter på vej' under boksen skjules*/
     .none {

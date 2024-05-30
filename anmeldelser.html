@@ -24,7 +24,6 @@
     <title>Anmeldelser</title>
 
 </head>
-
 <body>
     <header>
         <!--Navigationsbar til mobil-->
@@ -33,8 +32,8 @@
         
         <!--Picture tag med webp og fallback til png-->
                         <picture>
-                            <source type="image/webp" src="img/webp/logo.webp">
-                            <source type="image/png" src="img/png/logo.png">
+                            <source type="image/webp" srcset="img/webp/logo.webp">
+                            <source type="image/png" srcset="img/png/logo.png">
         
                             <img class="logo" src="img/png/logo.png" alt="logo">
                         </picture>
@@ -49,7 +48,7 @@
                             <nav class="dropdropdown">
                                 <nav class="dropcontent">
         <!--Andet lag dropdown med UTF-8 pil ikon-->
-                                <a href="#">Alle produkter <span class="flyt">&#9655</span></a>
+                                <a href="#">Alle produkter <span class="flyt">&#9655;</span></a>
                                 <nav class="dropdropdropdown">
         <!--Tredje lag dropdown-->
                                     <a href="produkter.html">De klassiske øl</a>
@@ -69,7 +68,7 @@
                             <nav class="dropdropdown">
                                 <nav class="dropcontent">
         <!--Resten af navigationsbaren fortsætter som forklaret ovenfor-->
-                                    <a href="#">Det gode valg <span class="far">&#9655</span></a>
+                                    <a href="#">Det gode valg <span class="far">&#9655;</span></a>
                                     <nav class="dropdropdropdown">
                                         <a href="sundhed.html">Info om sundhed</a>
                                         <a href="#">Bæredygtighed</a>
@@ -77,7 +76,7 @@
                                     </nav>
                                 </nav>
                                     <nav class="dropcontent">
-                                    <a href="#">Smagens udvikling <span>&#9655</span></a>
+                                    <a href="#">Smagens udvikling <span>&#9655;</span></a>
                                     <nav class="dropdropdropdown">
                                         <a href="#">Øl vs. sodavand</a>
                                         <a href="#">Gæt smagen</a>
@@ -114,7 +113,7 @@
                             <a href="#">Om ZeroBuzz Brew</a>
                             <nav class="dropdropdown">
                                 <nav class="dropcontent">
-                                <a href="#">Om os <span class="further">&#9655</span></a>
+                                <a href="#">Om os <span class="further">&#9655;</span></a>
                                 <nav class="dropdropdropdown">
                                     <a href="#">Vores historie</a>
                                     <a href="vaerdier.html">Vores værdier</a>
@@ -146,7 +145,7 @@
                         <nav class="deskdrop-content">
                             <nav class="deskdropdrop">
         <!--Dropdown med UTF-8 pil ikon til andet lag dropdown-->
-                                <button class="dropdropbtn">Alle produkter <span>&#9655</span></button>
+                                <button class="dropdropbtn">Alle produkter <span>&#9655;</span></button>
         <!--Andet lag dropdown-->
                                 <nav class="deskdropdrop-content">
                                     <a href="produkter.html">De klassiske øl</a>
@@ -167,7 +166,7 @@
                         <button class="dropbtn">Information</button>
                         <nav class="deskdrop-content">
                             <nav class="deskdropdrop">
-                                <button class="dropdropbtn">Det gode valg <span class="far">&#9655</span></button>
+                                <button class="dropdropbtn">Det gode valg <span class="far">&#9655;</span></button>
                                 <nav class="deskdropdrop-content">
                                     <a href="sundhed.html">Info om sundhed</a>
                                     <a href="#">Bæredygtighed</a>
@@ -175,7 +174,7 @@
                                 </nav>
                             </nav>
                             <nav class="deskdropdrop">
-                                <button class="dropdropbtn">Smagens udvikling <span>&#9655</span></button>
+                                <button class="dropdropbtn">Smagens udvikling <span>&#9655;</span></button>
                                 <nav class="deskdropdrop-content">
                                     <a href="#">Øl vs. sodavand</a>
                                     <a href="#">Gæt smagen</a>
@@ -209,7 +208,7 @@
                         <button class="dropbtn">Om ZeroBuzz Brew</button>
                         <nav class="deskdrop-content">
                             <nav class="deskdropdrop">
-                                <button class="dropdropbtn">Om os <span class="further">&#9655</span></button>
+                                <button class="dropdropbtn">Om os <span class="further">&#9655;</span></button>
                                 <nav class="deskdropdrop-content">
                                     <a href="#">Vores historie</a>
                                     <a href="vaerdier.html">Vores værdier</a>
@@ -231,7 +230,6 @@
                         </nav>
                     </nav>
                     </nav>
-                </nav>
         </header>
     
     <main>
@@ -243,11 +241,11 @@ brugt 5 helt fyldte i stedet for-->
         <p class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
 
 <!--'Skriv en anmeldese' og sorter boks er sat i samme <section> for at kunne bruge flex-->
-    <section class="flex">
+    <div class="flex">
         <p class="link">Skriv en anmeldelse</p>
 
-        <section class="sorter">
-            <form action="##">
+        <div class="sorter">
+            <form action="#">
                 <p>Sorter efter: </p><br>
                     <select name="sorter" id="sorter">
                         <option value="nyeste">Nyeste</option>
@@ -256,75 +254,103 @@ brugt 5 helt fyldte i stedet for-->
                         <option value="produkt">Produkt</option>
                     </select>
             </form>
-        </section>
-    </section>
+        </div>
+    </div>
 
 <!--Opsætning af en anmeldelse, sat i flere <section>s for at kunne lave om på opsætningen på desktop-->
-    <section class="anmeld"> <!--Hele kassen-->
+    <div class="anmeld"> <!--Hele kassen-->
         <p class="righte">Upload: 27/03/2024</p> <!--Kun upload-->
-    <section class="part1"> <!--Stjerner og produkt billede-->
-    <section>
+    <div class="part1"> <!--Stjerner og produkt billede-->
+    <div>
         <p class="starsin">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
-        <img src="img/png/can2.png" alt="can">
-    </section>
+
+        <picture>
+            <source type="image/webp" srcset="img/webp/can2.webp">
+            <source type="image/png" srcset="img/png/can2.png">
+
+            <img src="img/png/can2.png" alt="can">
+        </picture>
+
+    </div>
     <section class="tekst"> <!--Alt tekst-->
-        <p><b>Den bedste alkoholfrie øl</b></p> <!--Overskirft med tyk-->
+        <h6><b>Den bedste alkoholfrie øl</b></h6> <!--Overskirft med tyk-->
         <p>En rigtig god øl til en virkelig god pris! Jeg har længe ledt efter en alkoholfri øl, der smager 
             præcis som dem med alkohol, men uden held. Jeg var derfor meget skeptisk da jeg først prøvede dette 
             produkt, men må indrømme at de har ramt smagen til perfektion. Vil klart anbefale den til andre, 
             som ligesom mig, elsker øl smagen men ikke vil drikke dem med
             alkohol.</p>
     </section>
-    </section>
-    </section>
+</div>
+</div>
 
 <!--Anmeldelse 2, samme opsætning-->
-    <section class="anmeld">
+    <div class="anmeld">
         <p class="righte">Upload: 10/03/2024</p>
-    <section class="part1">
-    <section>
+    <div class="part1">
+    <div>
         <p class="starsin">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
-        <img src="img/png/can1.png" alt="can">
-    </section>
+
+        <picture>
+            <source type="image/webp" srcset="img/webp/can1.webp">
+            <source type="image/png" srcset="img/png/can1.png">
+
+            <img src="img/png/can1.png" alt="can">
+        </picture>
+
+    </div>
     <section class="tekst">
-        <p><b>Smager præcis som rigtig øl, mangler dog et større udvalg</b></p>
+        <h6><b>Smager præcis som rigtig øl, mangler dog et større udvalg</b></h6>
         <p>Et helt fint produkt som jeg klart vil anbefale videre. Smagen er rigtig god, og man kan slet 
         ikke smage forskel på de rigtige og denne. Jeg ville dog ønske lidt flere klassiske 
         valgmuligheder, men er selvfølgelig med på at de tager tid at udvikle, så jeg vil helt klart 
         holde mig opdateret på siden fremover.</p>
     </section>
-    </section>
-    </section>
+</div>
+</div>
 
 <!--Anmeldelse 3-->
-    <section class="anmeld">
+    <div class="anmeld">
         <p class="righte">Upload: 25/02/2024</p>
-    <section class="part1">
-    <section>
+    <div class="part1">
+    <div>
         <p class="starsin">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
-        <img src="img/png/can4.png" alt="can">
-    </section>
+
+        <picture>
+            <source type="image/webp" srcset="img/webp/can4.webp">
+            <source type="image/png" srcset="img/png/can4.png">
+
+            <img src="img/png/can4.png" alt="can">
+        </picture>
+
+    </div>
     <section class="tekst">
-        <p><b>Super godt produkt!</b></p>
+        <h6><b>Super godt produkt!</b></h6>
         <p>Godt produkt. Jeg har altid været mest til specialøl, hvilket har været et problem efter jeg 
             er begyndt at skære ned på mit alkoholindtag, da det for det meste kun er de klassiske der 
             bliver lavet. Jeg håber selvfølgelig at der komme masser flere muligheder i fremtiden, men 
             for nu er jeg helt tilfreds med dette udvalg, da det er større end hvad de fleste andre 
             tilbyder.</p>
     </section>
-    </section>
-    </section>
+</div>
+</div>
 
 <!--Anmeldelse 4-->
-    <section class="anmeld">
+    <div class="anmeld">
         <p class="righte">Upload: 05/01/2024</p>
-    <section class="part1">
-    <section>
+    <div class="part1">
+    <div>
         <p class="starsin">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
-        <img src="img/png/can6.png" alt="can">
-    </section>
+
+        <picture>
+            <source type="image/webp" srcset="img/webp/can6.webp">
+            <source type="image/png" srcset="img/png/can6.png">
+
+            <img src="img/png/can6.png" alt="can">
+        </picture>
+
+    </div>
     <section class="tekst">
-        <p><b>Kan klart anbefales</b></p>
+        <h6><b>Kan klart anbefales</b></h6>
         <p>Jeg har aldrig været så glad for øl smagen, så plejer at holde mig til andre alkoholiske 
             drikkevarer, og de gange hvor jeg har holdt mig til det alkoholfrie i stedet, er jeg 
             endt med en sodavand eller lignende. Men da jeg hørte om dette produkt, tænkte jeg 
@@ -334,19 +360,26 @@ brugt 5 helt fyldte i stedet for-->
             jeg af diverse grunde gerne vil holde mit alkoholindtag nede, men samtidig føle mig som 
             en del af fællesskabet, da de fleste jeg kender elsker øl.</p>
     </section>
-    </section>
-    </section>
+</div>
+</div>
 
 <!--Anmeldelse 5--> 
-    <section class="anmeld">
+    <div class="anmeld">
         <p class="righte">Upload: 02/01/2024</p>
-    <section class="part1">
-    <section>
+    <div class="part1">
+    <div>
         <p class="starsin">&#9733; &#9733; &#9733; &#9733; &#9733;</p>
-        <img src="img/png/can5.png" alt="can">
-    </section>
+
+        <picture>
+            <source type="image/webp" srcset="img/webp/can5.webp">
+            <source type="image/png" srcset="img/png/can5.png">
+
+            <img src="img/png/can5.png" alt="can">
+        </picture>
+
+    </div>
     <section class="tekst">
-        <p><b>De smager bare godt</b></p>
+        <h6><b>De smager bare godt</b></h6>
         <p>Nu har jeg prøvet alle øl her på siden, og må klart sige at denne med Lime og 
             cherimoya er min yndlings. Selvom jeg sagtens kan lide øl smagen, må jeg sige at 
             dette er endnu bedre. Selvom den smager langt fra traditionel øl, får jeg stadig en 
@@ -354,8 +387,8 @@ brugt 5 helt fyldte i stedet for-->
             er godt gået må jeg sige. Håber der kommer flere smage i fremtiden, for så skal de 
             helt sikkert også prøves.</p>
     </section>
-    </section>
-    </section>
+</div>
+</div>
 
     </main>
 
@@ -367,64 +400,99 @@ brugt 5 helt fyldte i stedet for-->
         <!--Footer opstilling til mobil--> 
                 <section class="mobil">
         <!--Overskrift-->
-                <p><b>ZeroBuzzBrew</b></p>
+                <h6 class="zero"><b>ZeroBuzzBrew</b></h6>
         <!--De tre ikoner som skal være links, men da sidere ikke eksisterer sker der ikke noget ved klik-->
                 <figure class="ikoner">
                     <a href="#" class="ikoner">
-                        <img src="img/png/facebook.png" alt="facebook">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/facebook.webp">
+                            <source type="image/png" srcset="img/png/facebook.png">
+
+                            <img src="img/png/facebook.png" alt="facebook">
+                        </picture>
                     </a>
+
                     <a href="#" class="ikoner">
-                        <img src="img/png/instagram.png" alt="instagram">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/instagram.webp">
+                            <source type="image/png" srcset="img/png/instagram.png">
+
+                            <img src="img/png/instagram.png" alt="facebook">
+                        </picture>
                     </a>
+
                     <a href="#" class="ikoner">
-                        <img src="img/png/twitter.png" alt="twitter">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/twitter.webp">
+                            <source type="image/png" srcset="img/png/twitter.png">
+
+                            <img src="img/png/twitter.png" alt="facebook">
+                        </picture>
                     </a>
                 </figure>
+
         <!--Alle shortcuts-->
                 <a href="produkter.html">Se produkter</a>
-                <a href="##">Kontakt</a>
-                <a href="##">FAQ</a>
-                <a href="##">Støt os</a>
+                <a href="#">Kontakt</a>
+                <a href="#">FAQ</a>
+                <a href="#">Støt os</a>
                 <a href="anmeldelser.html">Anmeldelser</a>
-                <a href="##">Om os</a>
+                <a href="#">Om os</a>
                 <a href="vaerdier.html">Vores værdier</a>
             </section>
         
         <!--Footer opstilling til desktop-->
-            <section class="desktop">
+            <div class="desktop">
         <!--Venstre side i flex-->
-                <section class="left">
-                    <a href="##">Kontakt</a>
-                    <a href="##">FAQ</a>
-                    <a href="##">Støt os</a>
-                </section>
+                <div class="left">
+                    <a href="#">Kontakt</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Støt os</a>
+                </div>
         <!--Midten af flex-->
                 <section>
-                    <p><b>ZeroBuzzBrew</b></p>
+                    <h6 class="zero"><b>ZeroBuzzBrew</b></h6>
                 <figure class="ikoner">
                     <a href="#" class="ikoner">
-                        <img src="img/png/facebook.png" alt="facebook">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/facebook.webp">
+                            <source type="image/png" srcset="img/png/facebook.png">
+
+                            <img src="img/png/facebook.png" alt="facebook">
+                        </picture>
                     </a>
+
                     <a href="#" class="ikoner">
-                        <img src="img/png/instagram.png" alt="instagram">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/instagram.webp">
+                            <source type="image/png" srcset="img/png/instagram.png">
+
+                            <img src="img/png/instagram.png" alt="facebook">
+                        </picture>
                     </a>
+
                     <a href="#" class="ikoner">
-                        <img src="img/png/twitter.png" alt="twitter">
+                        <picture>
+                            <source type="image/webp" srcset="img/webp/twitter.webp">
+                            <source type="image/png" srcset="img/png/twitter.png">
+
+                            <img src="img/png/twitter.png" alt="facebook">
+                        </picture>
                     </a>
                 </figure>
                     <a href="produkter.html">Se produkter</a>
-                    <section class="info">
+                    <div class="info">
                     <p>+45 56 67 89 56</p>
                     <p>zerobuzzbrew@gmail.com</p>
-                </section>
+                    </div>
         <!--Højre side af flex-->
                 </section>
-                <section class="right">
+                <div class="right">
                     <a href="anmeldelser.html">Anmeldelser</a>
-                    <a href="##">Om os</a>
+                    <a href="#">Om os</a>
                     <a href="vaerdier.html">Vores værdier</a>
-                </section>
-            </section>
+                </div>
+            </div>
             </footer>
 </body>
 </html>
