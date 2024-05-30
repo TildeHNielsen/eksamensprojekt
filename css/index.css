@@ -14,7 +14,7 @@ p {
 }
 h1, h3 {
     text-align: center;
-    padding-top: 1rem;
+    padding-top: 4rem;
     font-size: 1.875rem; /*Størrelser valgt ved Mockups*/
     font-family: "DM Serif Display", serif; /*Taget fra Google fonts*/
     font-weight: 400;
@@ -228,13 +228,13 @@ hr {
     font-size: 2.5rem; /*Størrelser valgt ved Mockups*/
     color: #F1DD29;
     border: solid 0.2rem black;
-    width: 15rem;
+    width: 17rem;
     margin-left: auto; /*Placering i midten*/
     margin-right: auto; /*Placering i midten*/
     margin-top: 0rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
     margin-top: 0.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.2rem;
 }
 /*Skjul tekst på mobil*/
 .hide {
@@ -378,8 +378,6 @@ breakpoints, men jeg har valgt at se bort fra det*/
         background-color: black; /*Ny baggrundsfarve*/
         margin-bottom: 10rem;
         border: 0.2rem solid grey;
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
 /*Anden tekst vises*/
     .hide {
